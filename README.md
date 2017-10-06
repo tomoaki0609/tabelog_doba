@@ -14,12 +14,11 @@
 ## products table
 |Column|Type|Options|
 |------|----|-------|
-|shop_name|string||
+|shop_name|string|index: true|
 |genre|string||
 |address|text||
 |image_url|text||
 |detail|text||
-
 - has_many :users
 - has_many :users, through: :product_users
 - has_many :reviews
@@ -38,9 +37,8 @@
 |------|----|-------|
 |rate|integer||
 |comment|text||
-|user_id|integer||
-|product_id|integer||
+|user_id|references|foreign_key: true|
+|product_id|references|foreign_key: true|
 
 - belongs_to :user
 - belongs_to :product
-
