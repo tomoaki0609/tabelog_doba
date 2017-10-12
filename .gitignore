@@ -4,5 +4,6 @@
 !/log/.keep
 !/tmp/.keep
 /secrets.yml
+public/assets/*
 
 test/fixtures/files/.keep
