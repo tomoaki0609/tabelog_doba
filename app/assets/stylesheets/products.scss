@@ -16,28 +16,59 @@
         }
     }
   }
-  .logo{
-    position: absolute;
-    top: 0px;
-    font-size: 30px;
-    color: white;
-    line-height: 60px;
-    font-family: monospace;
+  .top-contents{
+    background: '';
+    .logo{
+      position: absolute;
+      top: 0px;
+      left: 150px;
+      font-size: 20px;
+      color: white;
+      line-height: 60px;
+      font-family: monospace;
+    }
+    .user-menu{
+      position: absolute;
+      top: 0px;
+      right: 150px;
+      font-size: 12px;
+      line-height: 60px;
+      li{
+        display: inline;
+        margin-right: 14px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: orange;
+      }
+    }
   }
-  .catch-phrase{
-    color: white;
+  .catch{
     position: absolute;
     top: 200px;
-    font-size: 60px
+    left: 400px;
+    .catch-phrase{
+      color: white;
+      font-size: 60px;
+    }
+    .phrase{
+      color: white;
+      font-size: 20px;
+    }
   }
   .serch-form{
     position: absolute;
-    top: 300px;
+    top: 500px;
+    left: 650px;
     font-size: 30px;
     color: white;
   }
 
 }
 .information{
+  height: 70px;
 }
 

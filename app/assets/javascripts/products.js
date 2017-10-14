@@ -7,3 +7,15 @@ $(function() {
         }
     });
 });
+$(function() {
+  $("#color-change").mouseover(function(){
+    $(this).stop().css("background-color","black");
+  }).mouseout(function(){
+    $(this).stop().css("background-color","");
+  });
+});
+// $("#color-change").mouseover(function(){
+//   $(this).animate({
+//     color: black
+//   });
+// });

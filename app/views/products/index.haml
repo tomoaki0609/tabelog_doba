@@ -1,23 +1,36 @@
 .head
-  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
-  %script src="javascripts/products.js"
+  %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
+  %script{src: "https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"}
+  %script {src: "javascripts/products.js"}
 
 .first-contents
   .video-wrap
     %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
     .input-form
       %input{type: "button", id: "play-button", value: "PLAY"}
-  .log
-    %p 食べログ
-  .user-menu
-    %strong 食べログの特徴と便利な使い方
-    %strong 無料会員登録
-    %strong 保有Tポイント
-    %strong 予約確認
-    %strong 行った・行きたい
-    %strong ログイン
+    .top-contents
+      .logo#color-change
+        %p 食べログ
+      .user-menu
+        %ul
+          %li
+            %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
+          %li
+            %a{href: 'http://google.co.jp'} 無料会員登録
+          %li
+            %a{href: 'http://google.co.jp'} 保有Tポイント
+          %li
+            %a{href: 'http://google.co.jp'} 予約確認
+          %li
+            %a{href: 'http://google.co.jp'} 行った・行きたい
+          %li
+            %a{href: 'http://google.co.jp'} ログイン
 
-  %p.catch-phrase おいしいを見つけよう
+  .catch
+    %p.catch-phrase おいしいを見つけよう
+    .phrase
+      %p きどらない仲間との乾杯も特別な日のお寿司も。
+      %p 食べログであなたの思い出をより『おいしく』。
   %p.serch-form 検索
 
 
