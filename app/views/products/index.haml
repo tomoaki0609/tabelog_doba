@@ -1,39 +1,47 @@
-.head
+%head
   %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
   %script{src: "https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"}
   %script {src: "javascripts/products.js"}
+%body
+  .first-contents
+    .video-wrap
+      %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
+      .input-form
+        %input{type: "button", id: "play-button", value: "PLAY"}
+      .top-contents#color-change
+        .logo
+          %p 食べログ
+        .user-menu
+          %ul
+            %li
+              %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
+            %li
+              %a{href: 'http://google.co.jp'} 無料会員登録
+            %li
+              %a{href: 'http://google.co.jp'} 保有Tポイント
+            %li
+              %a{href: 'http://google.co.jp'} 予約確認
+            %li
+              %a{href: 'http://google.co.jp'} 行った・行きたい
+            %li
+              %a{href: 'http://google.co.jp'} ログイン
 
-.first-contents
-  .video-wrap
-    %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
-    .input-form
-      %input{type: "button", id: "play-button", value: "PLAY"}
-    .top-contents
-      .logo#color-change
-        %p 食べログ
-      .user-menu
-        %ul
-          %li
-            %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
-          %li
-            %a{href: 'http://google.co.jp'} 無料会員登録
-          %li
-            %a{href: 'http://google.co.jp'} 保有Tポイント
-          %li
-            %a{href: 'http://google.co.jp'} 予約確認
-          %li
-            %a{href: 'http://google.co.jp'} 行った・行きたい
-          %li
-            %a{href: 'http://google.co.jp'} ログイン
-
-  .catch
-    %p.catch-phrase おいしいを見つけよう
-    .phrase
-      %p きどらない仲間との乾杯も特別な日のお寿司も。
-      %p 食べログであなたの思い出をより『おいしく』。
-  %p.serch-form 検索
+    .catch
+      %p.catch-phrase おいしいを見つけよう
+      .phrase
+        %p きどらない仲間との乾杯も特別な日のお寿司も。
+        %p 食べログであなたの思い出をより『おいしく』。
+    .serch-form
+      .back-color
+        %form
+        .form
+          %input.text-form{type: 'text', id: 'text'}
+          %p.button-form 検索
 
 
-.information
-  %p お知らせ：おなかをすかせて
+
+  .information
+    .back-color
+      %strong お知らせ
+      %a{href: 'https://www.google.co.jp'} おなかをすかせて
 

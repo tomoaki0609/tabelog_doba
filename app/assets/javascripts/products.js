@@ -8,11 +8,14 @@ $(function() {
     });
 });
 $(function() {
-  $("#color-change").mouseover(function(){
-    $(this).stop().css("background-color","black");
-  }).mouseout(function(){
-    $(this).stop().css("background-color","");
-  });
+  $("#color-change").hover(
+    function(){
+      $(this).stop().animate({"background-color": "rgba(0,0,0,1)"},200);
+    },
+    function(){
+      $(this).stop().animate({"background-color": "rgba(0,0,0,0)"},200);
+    }
+  );
 });
 // $("#color-change").mouseover(function(){
 //   $(this).animate({

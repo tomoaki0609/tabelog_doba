@@ -17,20 +17,25 @@
     }
   }
   .top-contents{
-    background: '';
+    position: absolute;
+    top:0;
+    left:0;
+    height: 60px;
+    width: 100%;
+    min-width: 1000px;
+    background-color: black;
+    background: rgba(0,0,0,0);
     .logo{
-      position: absolute;
-      top: 0px;
-      left: 150px;
+      float:left;
+      margin-left: 10%;
       font-size: 20px;
       color: white;
       line-height: 60px;
       font-family: monospace;
     }
     .user-menu{
-      position: absolute;
-      top: 0px;
-      right: 150px;
+      float: left;
+      margin-left: 300px;
       font-size: 12px;
       line-height: 60px;
       li{
@@ -43,13 +48,16 @@
       }
       a:hover{
         color: orange;
+        text-decoration: underline;
       }
     }
   }
   .catch{
     position: absolute;
     top: 200px;
-    left: 400px;
+    width: 100%;
+    min-width: 1000px;
+    text-align: center;
     .catch-phrase{
       color: white;
       font-size: 60px;
@@ -61,14 +69,61 @@
   }
   .serch-form{
     position: absolute;
-    top: 500px;
-    left: 650px;
+    top: 400px;
+    left: 150px;
     font-size: 30px;
     color: white;
+    .back-color{
+      height: 100px;
+      width: 1000px;
+      background-color: rgba(255,255,255,0.3);
+      -webkit-border-radius: 5px;
+      .form{
+        width: 100%;
+        padding: 10px 25px 0 25px;
+        .text-form{
+          float: left;
+          width: 850px;
+          height: 76px;
+        }
+        .button-form{
+          float: left;
+          width: 100px;
+          height: 80px;
+          line-height: 80px;
+          background-color: orange;
+          text-align: center;
+        }
+      }
+    }
   }
 
 }
 .information{
+  min-width: 1000px;
   height: 70px;
+  .back-color{
+    height: 50px;
+    width: 1000px;
+    margin: 50px auto;
+    background-color: papayawhip;
+    strong{
+      padding-left: 2em;
+      line-height: 50px;
+      font-size: 0.7em;
+      font-weight: bold;
+    }
+    a{
+      padding-left: 2em;
+      font-size: 0.7em;
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+    a:hover{
+      color: orange;
+      text-decoration: underline;
+
+    }
+  }
 }
 
