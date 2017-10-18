@@ -1,26 +1,115 @@
-.head
-  %script{:src => "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
-  %script src="javascripts/products.js"
+%head
+  %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
+  %script{src: "https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"}
+  %script {src: "javascripts/products.js"}
+  %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity: "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", rel: "stylesheet"}
+%body
+  .first-contents
+    .video-wrap
+      %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
+      .input-form
+        %input{type: "button", id: "play-button", value: "PLAY"}
+      .top-contents#color-change
+        .logo
+          %p 食べログ
+        .user-menu
+          %ul
+            %li
+              %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
+            %li
+              %a{href: 'http://google.co.jp'} 無料会員登録
+            %li
+              %a{href: 'http://google.co.jp'} 保有Tポイント
+            %li
+              %a{href: 'http://google.co.jp'} 予約確認
+            %li
+              %a{href: 'http://google.co.jp'} 行った・行きたい
+            %li
+              %a{href: 'http://google.co.jp'} ログイン
 
-.first-contents
-  .video-wrap
-    %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
-    .input-form
-      %input{type: "button", id: "play-button", value: "PLAY"}
-  .log
-    %p 食べログ
-  .user-menu
-    %strong 食べログの特徴と便利な使い方
-    %strong 無料会員登録
-    %strong 保有Tポイント
-    %strong 予約確認
-    %strong 行った・行きたい
-    %strong ログイン
-
-  %p.catch-phrase おいしいを見つけよう
-  %p.serch-form 検索
+    .catch
+      %p.catch-phrase おいしいを見つけよう
+      .phrase
+        %p きどらない仲間との乾杯も特別な日のお寿司も。
+        %p 食べログであなたの思い出をより『おいしく』。
+    .serch-form
+      .back-color
+        %form
+        .form
+          %input.text-form{type: 'text', id: 'text'}
+          %p.button-form 検索
 
 
-.information
-  %p お知らせ：おなかをすかせて
+
+  .information
+    .back-color
+      %strong お知らせ
+      %a{href: 'https://www.google.co.jp'} おなかをすかせて
+  .second-contents
+    .main-contents
+      %p.content-name1 お店、レストランを探す
+      .border
+        .frame
+          %p 都道府県から探す
+      .blank1
+      .new-review
+        %p 新着口コミ
+        .frame
+      .backcolor
+      .blank
+
+
+
+
+
+    .sidebar
+      .mypage-color
+        .mypage
+          .mypage-inside
+            %img.image{src: "images/steak.jpeg", width: "64", height: "64"}
+            .name
+              %p tomooさん
+            .infomation
+              %p 携帯電話番号認証にご協力ください
+            .mypage__menu
+              .contents
+                %ul
+                  %li ログ
+                  %li 行ったお店
+                  %li 行きたいお店
+                  %li フォロー中
+                  %li フォロワー
+                  %li 下書き一覧
+                  %li 公開中口コミ一覧
+              .count
+                %ul
+                  %li 0
+                  %li 0
+                  %li 0
+                  %li 0
+                  %li 0
+                  %li 0
+                  %li 0
+            .creditcard-service
+              %p クレジットカードで初月無料
+              .backcolor
+                %p プレミアムサービスについて
+      .blank1
+      .review-serch
+        %p レビュアーを探す
+        .form
+          %input.text-form{type: 'text', id: 'text', value: 'レビュアー名'}
+          %p.button-form 検索
+      .reviewer-link
+        %a{href: 'http://google.co.jp'} 全国のレビュアーから探す
+      .facebook
+        %a{href: "###"}
+          %i.fa.fa-facebook-square.fa-fw.fa-lg.faa-tada.animated-hover
+          .text
+            %p 友達をフォローして
+            %p オススメのお店をチェックしよう
+      %p あなたの好みに似ているユーザー
+      .blank2
+  .third-contents
+
 

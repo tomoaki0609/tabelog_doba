@@ -16,28 +16,311 @@
         }
     }
   }
-  .logo{
+  .top-contents{
     position: absolute;
-    top: 0px;
-    font-size: 30px;
-    color: white;
-    line-height: 60px;
-    font-family: monospace;
+    top:0;
+    left:0;
+    height: 60px;
+    width: 100%;
+    min-width: 1000px;
+    background-color: black;
+    background: rgba(0,0,0,0);
+    .logo{
+      float:left;
+      margin-left: 10%;
+      font-size: 20px;
+      color: white;
+      line-height: 60px;
+      font-family: monospace;
+    }
+    .user-menu{
+      float: left;
+      margin-left: 300px;
+      font-size: 12px;
+      line-height: 60px;
+      li{
+        display: inline;
+        margin-right: 14px;
+      }
+      a{
+        color: white;
+        text-decoration: none;
+      }
+      a:hover{
+        color: orange;
+        text-decoration: underline;
+      }
+    }
   }
-  .catch-phrase{
-    color: white;
+  .catch{
     position: absolute;
     top: 200px;
-    font-size: 60px
+    width: 100%;
+    min-width: 1000px;
+    text-align: center;
+    .catch-phrase{
+      color: white;
+      font-size: 60px;
+    }
+    .phrase{
+      color: white;
+      font-size: 20px;
+    }
   }
   .serch-form{
     position: absolute;
-    top: 300px;
+    top: 400px;
+    left: 150px;
     font-size: 30px;
     color: white;
+    .back-color{
+      height: 100px;
+      width: 1000px;
+      background-color: rgba(255,255,255,0.3);
+      -webkit-border-radius: 5px;
+      .form{
+        width: 100%;
+        padding: 10px 25px 0 25px;
+        .text-form{
+          float: left;
+          width: 850px;
+          height: 76px;
+          -webkit-border-top-left-radius: 5px;
+          -webkit-border-bottom-left-radius: 5px;
+        }
+        .button-form{
+          float: left;
+          width: 100px;
+          height: 80px;
+          line-height: 80px;
+          background-color: orange;
+          text-align: center;
+          -webkit-border-top-right-radius: 5px;
+          -webkit-border-bottom-right-radius: 5px;
+        }
+      }
+    }
   }
-
 }
+
 .information{
+  min-width: 1000px;
+  height: 70px;
+  .back-color{
+    height: 50px;
+    width: 1120px;
+    margin: 50px auto;
+    background-color: papayawhip;
+    strong{
+      padding-left: 2em;
+      line-height: 50px;
+      font-size: 0.7em;
+      font-weight: bold;
+    }
+    a{
+      padding-left: 2em;
+      font-size: 0.7em;
+      color: cornflowerblue;
+      text-decoration: none;
+    }
+    a:hover{
+      color: orange;
+      text-decoration: underline;
+    }
+  }
 }
 
+.second-contents{
+  width: 1120px;
+  margin: 0 auto;
+  .main-contents{
+    float: left;
+    position: relative;
+    width: 830px;
+    height: 1000px;
+    .content-name1{
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .border{
+      width: 830px;
+      height: 450px;
+      border: groove lightgray 1px;
+      margin-top: 25px;
+      -webkit-border-radius: 5px;
+      .frame{
+        width: 800px;
+        height: 400px;
+        padding: 25px 15px;
+        p{
+          font-weight: bold;
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .blank1{
+      height: 45px;
+      border-bottom: groove lightgray 1px;
+    }
+    .new-review{
+      margin-top: 30px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      .frame{
+      }
+    }
+    .backcolor{
+      height: 70px;
+      background-color: whitesmoke;
+    }
+    .blank{
+      background-color: aqua;
+      width: 820px;
+      height: 2100px;
+    }
+  }
+  .sidebar{
+    float: left;
+    margin-left: 20px;
+    width: 270px;
+    height: 2740px;
+    background-color: aquamarine;
+    .mypage-color{
+      width: 270px;
+      height: 500px;
+      background-color: whitesmoke;
+      -webkit-border-radius: 5px;
+      position: relative;
+      .mypage{
+        width: 240px;
+        height: 470px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-color: white;
+        -webkit-border-radius: 5px;
+        .mypage-inside{
+          padding: 10px;
+          .image{
+            float: left;
+            padding: 4px;
+            border: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            border-radius: 5px;
+          }
+          .name{
+            margin: 0 0 0 85px;
+            font-weight: bold;
+          }
+          .infomation{
+            font-size: 0.7rem;
+            clear: both;
+            background-color: papayawhip;
+            margin-top: 90px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+          }
+          .mypage__menu{
+            margin-top: 10px;
+            font-size: 0.8rem;
+            color: lightgray;
+            .contents{
+              float:left;
+              width: 90%;
+            }
+            .count{
+              float:right;
+              text-align: right;
+              width: 10%;
+            }
+            ul li{
+              border-top: solid lightgray 1px;
+              line-height: 2rem;
+            }
+          }
+          .creditcard-service{
+            clear: both;
+            height: 65px;
+            font-size: 0.7rem;
+            background-color: papayawhip;
+            text-align: center;
+            p{
+              height: 30px;
+              line-height: 30px;
+              padding-top: 0px;
+            }
+            .backcolor{
+              background-color: mediumvioletred;
+              height: 30px;
+              line-height: 30px;
+              width: 90%;
+              margin: 0 auto;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .blank1{
+      height: 30px;
+      background-color: white;
+    }
+    .review-serch{
+      font-size: 0.7rem;
+      .form{
+        width: 100%;
+        .text-form{
+          float: left;
+          height: 30px;
+          width: 85%;
+          color: lightgray;
+        }
+        .button-form{
+          float: left;
+          width: 13%;
+          height: 34px;
+          line-height: 34px;
+          background-color: lightgray;
+          text-align: center;
+        }
+      }
+    }
+    .reviewer-link{
+      clear: both;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      text-align: right;
+      font-size: 0.7rem;
+    }
+    .facebook{
+      padding-top: 15px;
+      background-color: lightgray;
+      height: 40px;
+      .fa {
+        color: perple;
+        float: left;
+      }
+      .text{
+        float: left;
+        font-size: 0.6rem;
+        text-decoration: underline;
+      }
+    }
+    .blank2{
+      height: 15px;
+      background-color: white;
+      clear: both;
+    }
+  }
+}
+.third-contents{
+  width: 100%;
+  height: 800px;
+  background-color: whitesmoke;
+  clear: both;
+}
