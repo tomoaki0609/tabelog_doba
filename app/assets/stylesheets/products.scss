@@ -52,6 +52,9 @@
   top: 700px;
   position: fixed;
 }
+.scroll:hover{
+  opacity: 0.3;
+}
 
 .first-contents{
   min-width: 1000px;
@@ -67,6 +70,9 @@
           width: 55px;
           background-color: gray;
           opacity: 0.5;
+        }
+        input:hover{
+          opacity: 1;
         }
     }
   }
