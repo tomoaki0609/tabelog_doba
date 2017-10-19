@@ -1,4 +1,58 @@
 //first-contents(serch-form)
+#fixedPagetop{
+  height: 60px;
+  width: 100%;
+  border-bottom: 2px solid whitesmoke;
+  display: none;
+  background-color: white;
+  position: fixed;
+  z-index: 5;
+  .logo{
+      float:left;
+      margin-left: 10%;
+      font-size: 20px;
+      color: black;
+      line-height: 60px;
+      font-family: monospace;
+  }
+  .serch-form{
+    font-size: 30px;
+    color: white;
+    .form{
+      width: 100%;
+      padding: 10px 25px 0 25px;
+      .text-form{
+        float: left;
+        margin-left: 30px;
+        width: 950px;
+        height: 36px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+      }
+      .button-form{
+        float: left;
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+        background-color: orange;
+        text-align: center;
+        -webkit-border-top-right-radius: 5px;
+        -webkit-border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}
+
+#scroll-button{
+  height: 40px;
+  width: 40px;
+  background-color: whitesmoke;
+  position: absolute;
+  left: 1300px;
+  top: 700px;
+  position: fixed;
+}
+
 .first-contents{
   min-width: 1000px;
   .video-wrap{
@@ -139,8 +193,26 @@
     width: 830px;
     height: 1000px;
     .content-name1{
+      float: left;
       font-size: 20px;
       font-weight: bold;
+    }
+    .all-count{
+      margin-left: 480px;
+      font-weight: bold;
+      .count-name{
+        display: inline;
+        font-size: 0.7rem;
+      }
+      .count{
+        display: inline;
+        font-size: 0.9rem;
+        margin-left: 20px;
+      }
+      .registry{
+        display: inline;
+        margin-left: 20px;
+      }
     }
     .border{
       width: 830px;
@@ -174,7 +246,7 @@
       background-color: whitesmoke;
     }
     .blank{
-      background-color: aqua;
+      background-color: snow;
       width: 820px;
       height: 2100px;
     }
@@ -184,7 +256,7 @@
     margin-left: 20px;
     width: 270px;
     height: 2740px;
-    background-color: aquamarine;
+    background-color: snow;
     .mypage-color{
       width: 270px;
       height: 500px;
@@ -324,13 +396,15 @@
   background-color: whitesmoke;
   clear: both;
 }
-.fourth-contents{
-  height: 800px;
+.forth-contents{
+  height: 400px;
   background-color: gray;
 }
-.fifth-contents{
-
+.footer-before{
+  height: 800px;
+  background-color: lightgray;
 }
-.footer{
-
+footer{
+  height: 700px;
+  background-color: gray;
 }

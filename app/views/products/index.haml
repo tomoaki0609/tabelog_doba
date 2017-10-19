@@ -4,6 +4,16 @@
   %script {src: "javascripts/products.js"}
   %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity: "sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", rel: "stylesheet"}
 %body
+  .slide-contents#fixedPagetop
+    .logo
+      %p 食べログ
+    .serch-form
+      %form
+      .form
+        %input.text-form{type: 'text', id: 'text'}
+        %p.button-form 検索
+  .scroll-form
+    %input.scroll{type: "button", id: "scroll-button", value: "上へ"}
   .first-contents
     .video-wrap
       %video{src: 'videos/steak.mp4', autoplay: true, loop: true, id: 'video', width: '100%'}
@@ -48,6 +58,12 @@
   .second-contents
     .main-contents
       %p.content-name1 お店、レストランを探す
+      .all-count
+        %p.count 8860
+        %p.count-name 店舗
+        %p.count 88477
+        %p.count-name 口コミ
+        %input.registry{type: 'button', value: '新しくお店を登録'}
       .border
         .frame
           %p 都道府県から探す
@@ -111,9 +127,11 @@
       %p あなたの好みに似ているユーザー
       .blank2
   .third-contents
-    %p 全国ジャンル別
-  .fourth-contents
+    %p 全ジャンル別
+  .forth-contents
     %p 特集
-  .fifth-contents
-    %p footer前
-  .footer
+  .footer-before
+    %p 店舗運営者の方へ
+%footer
+  %p 食べログまとめ　食べログ取り寄せ
+
