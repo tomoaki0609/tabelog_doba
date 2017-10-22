@@ -21,21 +21,53 @@
         %input{type: "button", id: "play-button", value: "PLAY"}
       .top-contents#color-change
         .logo
-          %p 食べログ
+          -if user_signed_in?
+            = link_to '食べログ', root_path, class: 'logo-style'
+          -else
+            = link_to '食べログ', new_user_session_path
         .user-menu
           %ul
-            %li
-              %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
-            %li
-              %a{href: 'http://google.co.jp'} 無料会員登録
-            %li
-              %a{href: 'http://google.co.jp'} 保有Tポイント
-            %li
-              %a{href: 'http://google.co.jp'} 予約確認
-            %li
-              %a{href: 'http://google.co.jp'} 行った・行きたい
-            %li
-              %a{href: 'http://google.co.jp'} ログイン
+            -if user_signed_in?
+              %ul
+                %li
+                  %a{href: 'http://google.co.jp'} メッセージ
+                %li
+                  %a{href: 'http://google.co.jp'} お知らせ
+                %li
+                  %a{href: 'http://google.co.jp'} 0pt
+                %li
+                  %a{href: 'http://google.co.jp'} 予約確認
+                %li
+                  %a{href: 'http://google.co.jp'} 行った・行きたい
+                %li
+                  %a{href: 'http://google.co.jp'} マイページ
+                %li
+                  = link_to 'ログアウト', '/users/sign_out', method: :delete
+                %li
+                  %form.select
+                    %select
+                      %option 洗濯してください
+                      %option フォロー中一覧
+                      %option 下書き一覧
+                      %option 設定
+                      = link_to '/users/sign_out' do
+                        %option ログアウト
+            -else
+              %ul
+                %li
+                  %a{href: 'http://google.co.jp'} 食べログの特徴と便利な使い方
+                %li
+                  %a{href: 'http://google.co.jp'} 無料会員登録
+                %li
+                  %a{href: 'http://google.co.jp'} 保有Tポイント
+                %li
+                  %a{href: 'http://google.co.jp'} 予約確認
+                %li
+                  %a{href: 'http://google.co.jp'} 行った・行きたい
+                %li
+                  %a{href: '/users/sign_in'} ログイン
+
+
 
     .catch
       %p.catch-phrase おいしいを見つけよう
@@ -82,9 +114,11 @@
       .mypage-color
         .mypage
           .mypage-inside
-            %img.image{src: "images/steak.jpeg", width: "64", height: "64"}
+            .image
+              = image_tag current_user.avatar, size:"54x54"
             .name
-              %p tomooさん
+              %p= current_user.nickname
+              %p{style: "font-size: 5px"} さん
             .infomation
               %p 携帯電話番号認証にご協力ください
             .mypage__menu

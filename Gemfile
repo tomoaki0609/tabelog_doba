@@ -69,3 +69,7 @@ gem 'font-awesome-rails'
 gem 'carrierwave'
 
 gem 'devise'
+
+gem 'paperclip'
+
+gem 'erb2haml'
