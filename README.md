@@ -5,6 +5,7 @@
 |------|----|-------|
 |name|string|null: false, unique:true|
 |email|text|null: false, unique:true|
+|avatar|||
 - has_many :products
 - has_many :products, through: :product_users
 - has_many :reviews

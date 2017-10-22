@@ -93,6 +93,10 @@
       line-height: 60px;
       font-family: monospace;
     }
+    .logo-style{
+      color: white;
+      text-decoration: none;
+    }
     .user-menu{
       float: left;
       margin-left: 300px;
@@ -109,6 +113,8 @@
       a:hover{
         color: orange;
         text-decoration: underline;
+        .select{
+        }
       }
     }
   }
@@ -298,7 +304,7 @@
             font-size: 0.7rem;
             clear: both;
             background-color: papayawhip;
-            margin-top: 90px;
+            margin-top: 80px;
             height: 30px;
             line-height: 30px;
             text-align: center;
