@@ -15,9 +15,13 @@
 ## products table
 |Column|Type|Options|
 |------|----|-------|
-|shop_name|string|index: true|
-|genre|string||
-|address|text||
+|shop_name|string|null: false, index: true|
+|ruby|string|null: false,|
+|phone_number|integer|null: false,|
+|address1|string|null: false,|
+|address2|text|null: false,|
+|address3|text|null: false,|
+|genre|text|null: false,|
 |image_url|text||
 |detail|text||
 - has_many :users
