@@ -44,14 +44,14 @@
                 %li
                   = link_to 'ログアウト', '/users/sign_out', method: :delete
                 %li
-                  %form.select
-                    %select
-                      %option 洗濯してください
+                  %form{name: 'form1'}
+                    %select{name:'select1', onChange: 'if(document.form1.select1.value){location.href=document.form1.select1.value;}'}
+                      %option 選択してください
                       %option フォロー中一覧
                       %option 下書き一覧
                       %option 設定
-                      = link_to '/users/sign_out' do
-                        %option ログアウト
+                      %option{value: '/users/sign_out'} ログアウト
+                  }
             -else
               %ul
                 %li
@@ -166,6 +166,6 @@
     %p 特集
   .footer-before
     %p 店舗運営者の方へ
-%footer
-  %p 食べログまとめ　食べログ取り寄せ
+  %footer
+    %p 食べログまとめ　食べログ取り寄せ
 
