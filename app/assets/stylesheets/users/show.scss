@@ -1,13 +1,39 @@
-.first-contents{
-  .page-information{
-    float: left;
-    font-size: 0.7rem;
-  }
-  .user-menu{
-    float: left;
-    li{
-      display: inline;
-      margin-right: 14px;
+body{
+  header{
+    width: 100%;
+    position: relative;
+    .frame{
+      width: 900px;
+      min-width: 1000px;
+      height: 100px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      background-color: whitesmoke;
+      .title{
+        float: left;
+        height: 40px;
+        line-height: 40px;
+        font-size: 0.7rem;
+      }
+      .user-menu{
+        float: right;
+        height: 40px;
+        line-height: 40px;
+        li{
+          display: inline;
+          margin-right: 14px;
+          font-size: 0.8rem;
+        }
+        a{
+          color: midnightblue;
+          text-decoration: none;
+        }
+        .select{
+          float: right;
+        }
+      }
     }
   }
 }

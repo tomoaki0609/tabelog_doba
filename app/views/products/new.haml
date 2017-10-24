@@ -1,0 +1,11 @@
+= form_for @product do |f|
+  = f.text_field :shop_name, id: 'shop_name', class: 'shop_name__input', placeholder: '店名'
+  = f.text_field :ruby, placeholder: 'ふりがな'
+  = f.text_field :phone_number, placeholder: '電話番号'
+  = f.text_field :address1, placeholder: '都道府県'
+  = f.text_field :address2, placeholder: '市町村'
+  = f.text_field :address3, placeholder: 'マンション名、建物名'
+  = f.text_field :genre, placeholder: 'ジャンル'
+  = f.text_field :detail, placeholder: 'アピールポイント'
+  = f.text_field :image_url, placeholder: '写真'
+  = f.submit '店の登録', style: 'background-color:aqua;', method: :post
