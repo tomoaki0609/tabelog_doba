@@ -40,18 +40,17 @@
                 %li
                   %a{href: 'http://google.co.jp'} 行った・行きたい
                 %li
-                  = link_to 'マイページ', '/users/2'
+                  %a{href: "/users/#{current_user.id}"} マイページ
                 %li
                   = link_to 'ログアウト', '/users/sign_out', method: :delete
                 %li
-                  %form{name: 'form1'}
+                  %form.form1{name: 'form1'}
                     %select{name:'select1', onChange: 'if(document.form1.select1.value){location.href=document.form1.select1.value;}'}
                       %option 選択してください
                       %option フォロー中一覧
                       %option 下書き一覧
                       %option 設定
-                      %option{value: '/users/sign_out'} ログアウト
-                  }
+                      %option{value: '/users/sign_out', method: :delete} ログアウト
             -else
               %ul
                 %li
@@ -95,7 +94,7 @@
         %p.count-name 店舗
         %p.count 88477
         %p.count-name 口コミ
-        %input.registry{type: 'button', value: '新しくお店を登録'}
+        = link_to '新しくお店を登録', new_product_path, method: :get
       .border
         .frame
           %p 都道府県から探す
@@ -114,11 +113,15 @@
       .mypage-color
         .mypage
           .mypage-inside
-            .image
-              = image_tag current_user.avatar, size:"54x54"
-            .name
-              %p= current_user.nickname
-              %p{style: "font-size: 5px"} さん
+            -if user_signed_in?
+              .image
+                = image_tag current_user.avatar, size:"54x54"
+            -if user_signed_in?
+              .name
+                %p= current_user.nickname
+                %p{style: "font-size: 5px"} さん
+            -else
+              .blank
             .infomation
               %p 携帯電話番号認証にご協力ください
             .mypage__menu
@@ -168,4 +171,3 @@
     %p 店舗運営者の方へ
   %footer
     %p 食べログまとめ　食べログ取り寄せ
-
