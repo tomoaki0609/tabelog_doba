@@ -3,14 +3,14 @@ body{
     width: 100%;
     position: relative;
     .frame{
-      width: 900px;
+      width: 970px;
       min-width: 1000px;
-      height: 100px;
+      height: 90px;
       position: absolute;
       right: 0;
       left: 0;
       margin: auto;
-      background-color: whitesmoke;
+      background-color: gray;
       .title{
         float: left;
         height: 40px;
@@ -19,20 +19,130 @@ body{
       }
       .user-menu{
         float: right;
-        height: 40px;
+        ul{
+          height: 40px;
+          line-height: 40px;
+          li{
+            display: inline;
+            margin-right: 14px;
+            font-size: 0.8rem;
+          }
+          a{
+            color: blue;
+            text-decoration: none;
+            border-right: solid 1px whitesmoke;
+          }
+          a:hover{
+            color: orange;
+            text-decoration: underline;
+          }
+          .select{
+            float: right;
+          }
+        }
+      }
+      .logo{
+        float: left;
+        height: 50px;
+        width: 150px;
         line-height: 40px;
-        li{
-          display: inline;
-          margin-right: 14px;
-          font-size: 0.8rem;
+        clear: both;
+        p{
+          font-size: 25px;
         }
-        a{
-          color: midnightblue;
-          text-decoration: none;
+      }
+      .box{
+        float: left;
+        height: 33px;
+        width: 150px;
+        background-color: whitesmoke;
+        margin-top: 6px;
+        -webkit-border-top-left-radius: 5px;
+            -webkit-border-bottom-left-radius: 5px;
+      }
+      .search-form{
+        float: left;
+        font-size: 30px;
+        color: white;
+        height: 40px;
+        .form{
+          margin: 6px 0;
+          .text-form{
+            float: left;
+            height: 30px;
+            width: 600px;
+          }
+          .button-form{
+            float: left;
+            margin: 1px 0;
+            height: 33px;
+            width: 70px;
+            line-height: 30px;
+            background-color: orange;
+            text-align: center;
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+          }
         }
-        .select{
-          float: right;
+      }
+    }
+  }
+  .first-contents{
+    position: relative;
+    .frame{
+      clear: both;
+      width: 1000px;
+      height: 1000px;
+      position: absolute;
+      top: 90px;
+      right: 0;
+      left: 0;
+      margin: auto;
+      background-color: cornsilk;
+      .link{
+      height: 40px;
+      background-color: whitesmoke;
+      }
+      .back-image{
+        color: #000000;
+        background-color: #f8dce0;
+        background-image: url("/images/だんご.jpeg");
+        background-size: cover;
+        background-position: 70% 0%;
+        height: 350px;
+        position: relative;
+        .bottom{
+          width: 800px;
+          position: absolute;
+          top: 310px;
+          left: 180px;
+          p{
+            float: left;
+            color: white;
+            font-weight: bold;
+          }
+          .button-form{
+            float: right;
+          }
+
         }
+      }
+      .back-avatar{
+        position: absolute;
+        top: 330px;
+        left: 20px;
+        height: 130px;
+        width: 130px;
+        background-color: white;
+        -webkit-border-radius: 5px;
+          .avatar{
+            margin: 5px 5px;
+            -webkit-border-radius: 5px;
+          }
+        }
+      .profile{
+        height: 150px;
+        background-color: whitesmoke;
       }
     }
   }
