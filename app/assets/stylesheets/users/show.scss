@@ -3,14 +3,13 @@ body{
     width: 100%;
     position: relative;
     .frame{
-      width: 900px;
+      width: 970px;
       min-width: 1000px;
-      height: 100px;
+      height: 90px;
       position: absolute;
       right: 0;
       left: 0;
       margin: auto;
-      background-color: whitesmoke;
       .title{
         float: left;
         height: 40px;
@@ -19,20 +18,224 @@ body{
       }
       .user-menu{
         float: right;
-        height: 40px;
+        ul{
+          height: 40px;
+          line-height: 40px;
+          li{
+            display: inline;
+            margin-right: 14px;
+            font-size: 0.8rem;
+          }
+          a{
+            color: blue;
+            text-decoration: none;
+            border-right: solid 1px whitesmoke;
+          }
+          a:hover{
+            color: orange;
+            text-decoration: underline;
+          }
+          .select{
+            float: right;
+          }
+        }
+      }
+      .logo{
+        float: left;
+        height: 50px;
+        width: 150px;
         line-height: 40px;
-        li{
-          display: inline;
-          margin-right: 14px;
-          font-size: 0.8rem;
+        clear: both;
+        p{
+          font-size: 25px;
         }
-        a{
-          color: midnightblue;
-          text-decoration: none;
+      }
+      .box{
+        float: left;
+        height: 32px;
+        width: 150px;
+        background-color: whitesmoke;
+        margin-top: 6px;
+        -webkit-border-top-left-radius: 5px;
+        -webkit-border-bottom-left-radius: 5px;
+        border-top: solid 1px lightgray;
+        border-left: solid 1px lightgray;
+        border-bottom: solid 1px lightgray;
+      }
+      .search-form{
+        float: left;
+        font-size: 30px;
+        color: white;
+        height: 40px;
+        .form{
+          margin: 6px 0;
+          .text-form{
+            float: left;
+            height: 30px;
+            width: 600px;
+          }
+          .button-form{
+            float: left;
+            height: 33px;
+            width: 70px;
+            line-height: 30px;
+            background-color: orange;
+            text-align: center;
+            -webkit-border-top-right-radius: 5px;
+            -webkit-border-bottom-right-radius: 5px;
+            border-top: solid 1px lightgray;
+          }
         }
-        .select{
+      }
+    }
+  }
+  .first-contents{
+    position: relative;
+    top: 90px;
+    width: 100%;
+    height: 640px;
+    background-color: snow;
+    .frame{
+      width: 1000px;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: auto;
+      .link{
+      height: 40px;
+      }
+      .back-image{
+        color: #000000;
+        background-color: #f8dce0;
+        background-image: url("/images/だんご.jpeg");
+        background-size: cover;
+        background-position: 70% 0%;
+        height: 350px;
+        position: relative;
+        .bottom{
+          width: 800px;
+          position: absolute;
+          top: 310px;
+          left: 170px;
+          p{
+            float: left;
+            color: white;
+            font-weight: bold;
+          }
+          .button-form{
+            float: right;
+          }
+
+        }
+      }
+      .back-avatar{
+        position: absolute;
+        top: 330px;
+        left: 20px;
+        height: 130px;
+        width: 130px;
+        background-color: white;
+        -webkit-border-radius: 5px;
+          .avatar{
+            margin: 5px 5px;
+            -webkit-border-radius: 5px;
+          }
+        }
+      .profile{
+        height: 170px;
+        .profile-left{
+          float: left;
+          padding-top: 20px;
+          padding-left: 170px;
+          a{
+            font-size: 0.8rem;
+            text-decoration: none;
+            color: blue;
+          }
+          p{
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+        }
+        .profile-right{
           float: right;
+          width: 300px;
+          height: 140px;
+          margin-top: 15px;
+          font-size: 0.8rem;
+          font-weight: bold;
+          line-height: 30px;
+          position: relative;
+          background-color: white;
+          .slide{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+            width: 270px;
+            height: 120px;
+
+            .left{
+              float: left;
+              width: 220px;
+              border-bottom: 1px dotted lightgray;
+
+            }
+            .right{
+              float: right;
+              text-align: right;
+              width: 50px;
+              border-bottom: 1px dotted lightgray;
+            }
+          }
         }
+      }
+      hr{
+        border: 0;
+        border-top: 1px solid lightgray;
+      }
+      .log{
+        height: 60px;
+        background-color: white;
+        .box{
+          float: left;
+          padding-top: 10px;
+          width: 16.5%;
+          text-align: center;
+          border-right: 1px dotted lightgray;
+          .count{
+            font-size: 1.2rem;
+            font-weight: bold;
+          }
+          .item{
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .line{
+    margin-top: 100px;
+    clear: both;
+    border: 0;
+    border-top: 1px solid red;
+  }
+  .second-contents{
+    clear: both;
+    background-color: linen;
+    .flame{
+      width: 1000px;
+      .blank{
+        clear: both;
+        height: 50px;
+        background-color: red;
+      }
+      .favorite{
+        height: 60px;
+        width: 670px;
       }
     }
   }
