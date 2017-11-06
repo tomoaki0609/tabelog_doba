@@ -1,10 +1,12 @@
 //first-contents(serch-form)
+$text-color: whitesmoke;
+
 #fixedPagetop{
   height: 60px;
-  width: 100%;
   border-bottom: 2px solid whitesmoke;
-  display: none;
   background-color: white;
+  width: 100%;
+  display: none;
   position: fixed;
   z-index: 5;
   .logo{
@@ -51,6 +53,7 @@
   left: 1300px;
   top: 700px;
   position: fixed;
+  z-index: 7;
 }
 .scroll:hover{
   opacity: 0.3;
@@ -59,7 +62,6 @@
 .first-contents{
   min-width: 1000px;
   .video-wrap{
-    margin-top: -90px;
     .video{
     }
     .input-form{
@@ -331,25 +333,137 @@
     }
     .blank1{
       height: 45px;
-      border-bottom: groove whitesmoke 1px;
+      border-bottom: solid $text-color 1px;
     }
-    .new-review{
+    .shop-infomation{
       margin-top: 30px;
-      font-size: 1.2rem;
-      font-weight: bold;
+      p{
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
       .frame{
       }
     }
-    .backcolor{
+    .information-form{
       margin-top: 25px;
-      height: 70px;
-      background-color: whitesmoke;
+      height: 170px;
+      border-top: solid lightgray 5px;
+      .top{
+        height: 120px;
+        background-color: $text-color;
+        .top__title{
+          padding-top: 20px;
+          padding-left:20px;
+          strong{
+            margin-right: 0.5rem;
+            display: inline;
+            font-weight: bold;
+          }
+          span{
+            display: inline;
+            font-size: 0.8rem;
+            font-weight: bold;
+          }
+        }
+      }
+      .bottom{
+        height: 50px;
+        background-color: $text-color;
+        .boxes{
+          padding-left: 15px;
+          .box{
+            float: left;
+            height: 50px;
+            width: 200px;
+            border-top: 1px solid ghostwhite;
+            border-bottom: 1px solid ghostwhite;
+            p{
+              text-align: center;
+              line-height: 50px;
+            }
+          }
+          .box+ .box{
+            border-left: 1px solid ghostwhite;
+          }
+        }
+      }
     }
-    .blank{
-      margin-top: 20px;
-      background-color: snow;
-      width: 830px;
-      height: 2070px;
+    .detail{
+      height: 440px;
+      .blank2{
+        clear: both;
+        border-bottom: solid ghostwhite 3px;
+        p{
+          text-align: left;
+          height: 40px;
+          line-height: 40px;
+          font-size: 0.8rem;
+        }
+      }
+      .detail__header{
+        height: 50px;
+        a{
+          height: 50px;
+          line-height: 50px;
+          padding-left: 30px;
+          font-weight: bold;
+          color: darkblue;
+        }
+      }
+      .detail__body{
+        padding-left: 10px;
+        height: 210px;
+        .images{
+          .image{
+            height: 150px;
+            width: 150px;
+            padding: 4px;
+            border: 1px;
+            border-color: gray;
+            border-style: solid;
+          }
+          .mini-image{
+            margin-top: 5px;
+          }
+        }
+      }
+      .detail__information{
+        margin-left: 10px;
+        height: 40px;
+        width: 808px;
+        border: 1px;
+        border-color: gray;
+        border-style: solid;
+        p{
+          display: inline;
+          line-height: 40px;
+          font-size: 0.8rem;
+          font-weight: bold;
+          &.first{
+            margin-left: 10px;
+            background-color: gray;
+            color: white;
+          }
+        }
+
+        .second{
+          color: mediumblue;
+        }
+        .third{
+          float: right;
+          padding-right: 10px;
+          font-size: 0.6rem;
+          color: gray;
+        }
+        .forth{
+          float: right;
+          color: red;
+        }
+      }
+      .color{
+        height: 10px;
+        background-color: red;
+      }
     }
   }
   .sidebar{
@@ -361,7 +475,7 @@
     .mypage-color{
       width: 270px;
       height: 470px;
-      background-color: whitesmoke;
+      background-color: $text-color;
       -webkit-border-radius: 5px;
       position: relative;
       .mypage{
@@ -379,6 +493,7 @@
           padding: 10px;
           .image{
             float: left;
+            height: 64px;
             padding: 4px;
             border: 1px;
             border-color: lightgray;
@@ -386,7 +501,7 @@
             border-radius: 5px;
           }
           .name{
-            margin: 0 0 0 85px;
+            margin-left: 85px;
             font-weight: bold;
           }
           .blank{
@@ -523,7 +638,7 @@
 }
 .fifth-contents{
   height: 400px;
-  background-color: gray;
+  background-color: $text-color;
 }
 .footer-before{
   height: 800px;

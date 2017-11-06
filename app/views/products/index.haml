@@ -6,7 +6,7 @@
 %body
   .slide-contents#fixedPagetop
     .logo
-      %p 食べログ
+      = link_to '食べログ', root_path, class: 'logo-style'
     .serch-form
       %form
       .form
@@ -235,11 +235,49 @@
                   %li
                     %a{href: '###'} 沖縄
       .blank1
-      .new-review
-        %p 新着口コミ
-        .frame
-      .backcolor
-      .blank
+      .shop-infomation
+        %p お店の情報
+        .registration-button
+      .information-form
+        .top
+          .top__title
+            %strong 全国の和食のお店
+            %span 278676件
+        .bottom
+          .boxes
+            .box
+              %p 標準
+            .box
+              %p ランキング
+            .box
+              %p 口コミ数
+            .box
+              %p ニューオープン
+      .detail
+        .blank2
+          %p 1〜20件を表示／全203849件
+        .detail__header
+          .shop-name
+            %a 焼屋 安東
+        .detail__body
+          .images
+            .image
+              = image_tag "/images/beef.jpg", size: "150x150"
+            .mini-image
+              = image_tag "/images/beef.jpg", size: "28x28"
+              = image_tag "/images/beef.jpg", size: "28x28"
+              = image_tag "/images/beef.jpg", size: "28x28"
+              = image_tag "/images/beef.jpg", size: "28x28"
+              = image_tag "/images/beef.jpg", size: "28x28"
+        .detail__information
+          %p.first 飲み放題付き
+          %p.second 初めての方限定、衝撃お得コース
+          %p.third (税込価格)
+          %p.forth 2,500円
+        .color
+
+
+      .blank0
 
 
 
@@ -251,7 +289,7 @@
           .mypage-inside
             -if user_signed_in?
               .image
-                = image_tag current_user.avatar, size:"54x54"
+                = image_tag current_user.avatar, size: "64x64"
             -if user_signed_in?
               .name
                 %p= current_user.nickname
@@ -302,13 +340,3 @@
       %p.title あなたの好みに似ているユーザー
       .blank4
       .blank5
-  .third-contents
-    %p 全ジャンル別
-  .forth-contents
-    %p 条件・目的からお店を探す
-  .fifth-contents
-    %p 特集
-  .footer-before
-    %p 店舗運営者の方へ
-  %footer
-    %p 食べログまとめ　食べログ取り寄せ
