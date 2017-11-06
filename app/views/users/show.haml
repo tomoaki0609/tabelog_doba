@@ -1,40 +1,6 @@
 %head
 %body
-  %header
-    .frame
-      .title
-        %p #{current_user.nickname}さんのトップページ『#{current_user.nickname}のレストランガイド』
-      .user-menu
-        %ul
-          %li
-            %a.border{href: 'http://google.co.jp'} メッセージ
-          %li
-            %a{href: 'http://google.co.jp'} お知らせ
-          %li
-            %a{href: 'http://google.co.jp'} 0pt
-          %li
-            %a{href: 'http://google.co.jp'} 予約確認
-          %li
-            %a{href: 'http://google.co.jp'} 行った・行きたい
-          %li
-            = link_to 'マイページ', '/users/current_user.id', method: :get
-          %li
-            %form.select
-              %select
-                %option 洗濯してください
-                %option フォロー中一覧
-                %option 下書き一覧
-                %option 設定
-                = link_to '/users/sign_out' do
-                  %option ログアウト
-      .logo
-        %p 食べログ
-      .box
-      .search-form
-        %form
-        .form
-          %input.text-form{type: 'text', id: 'text'}
-          %p.button-form 検索
+  = render "header"
   .first-contents
     .frame
       .link
@@ -87,7 +53,4 @@
           %p.count 0
           %p.item フォロワー
   %hr.line
-  .second-contents
-    .blank
-    .favorite
 

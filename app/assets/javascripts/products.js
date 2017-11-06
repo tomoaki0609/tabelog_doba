@@ -22,13 +22,12 @@ $(function(){
     $(window).scroll(function () {
         var ScrTop = $(document).scrollTop();
         if (ScrTop < 800) {
-            $('#fixedPagetop').css({'display':'none'});
+          $('#fixedPagetop').css({'display':'none'});
         }
         if (ScrTop > 800) {
           $('#fixedPagetop').slideDown("slow");
           return false;
         }
-
     });
 });
 

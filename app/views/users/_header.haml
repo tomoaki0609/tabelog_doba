@@ -1,0 +1,38 @@
+%header
+  .frame
+    .top
+      .title
+        %p #{current_user.nickname}さんのトップページ『#{current_user.nickname}のレストランガイド』
+      .user-menu
+        %ul
+          %li
+            %a.border{href: 'http://google.co.jp'} メッセージ
+          %li
+            %a{href: 'http://google.co.jp'} お知らせ
+          %li
+            %a{href: 'http://google.co.jp'} 0pt
+          %li
+            %a{href: 'http://google.co.jp'} 予約確認
+          %li
+            %a{href: 'http://google.co.jp'} 行った・行きたい
+          %li
+            = link_to 'マイページ', '/users/current_user.id', method: :get
+          %li
+            %form.select
+              %select
+                %option 洗濯してください
+                %option フォロー中一覧
+                %option 下書き一覧
+                %option 設定
+                = link_to '/users/sign_out' do
+                  %option ログアウト
+    .bottom-color
+      .bottom-fixed
+        .logo
+          = link_to '食べログ', root_path, class: 'logo-style'
+        .box
+        .search-form
+          %form
+          .form
+            %input.text-form{type: 'text', id: 'text'}
+            %p.button-form 検索
