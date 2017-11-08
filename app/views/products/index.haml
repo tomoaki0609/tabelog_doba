@@ -24,7 +24,7 @@
           -if user_signed_in?
             = link_to '食べログ', root_path, class: 'logo-style'
           -else
-            = link_to '食べログ', new_user_session_path
+            = link_to '食べログ', new_user_session_path, class: 'logo-style'
         .user-menu
           %ul
             -if user_signed_in?
@@ -245,7 +245,7 @@
             %span 278676件
         .bottom
           .boxes
-            .box
+            .box.first
               %p 標準
             .box
               %p ランキング
@@ -253,30 +253,9 @@
               %p 口コミ数
             .box
               %p ニューオープン
-      .detail
-        .blank2
-          %p 1〜20件を表示／全203849件
-        .detail__header
-          .shop-name
-            %a 焼屋 安東
-        .detail__body
-          .images
-            .image
-              = image_tag "/images/beef.jpg", size: "150x150"
-            .mini-image
-              = image_tag "/images/beef.jpg", size: "28x28"
-              = image_tag "/images/beef.jpg", size: "28x28"
-              = image_tag "/images/beef.jpg", size: "28x28"
-              = image_tag "/images/beef.jpg", size: "28x28"
-              = image_tag "/images/beef.jpg", size: "28x28"
-        .detail__information
-          %p.first 飲み放題付き
-          %p.second 初めての方限定、衝撃お得コース
-          %p.third (税込価格)
-          %p.forth 2,500円
-        .color
-
-
+      = render "product"
+      = render "product"
+      .color
       .blank0
 
 
@@ -340,3 +319,13 @@
       %p.title あなたの好みに似ているユーザー
       .blank4
       .blank5
+  .third-contents
+    %p 全ジャンル別
+  .forth-contents
+    %p 条件・目的からお店を探す
+  .fifth-contents
+    %p 特集
+  .footer-before
+    %p 店舗運営者の方へ
+  %footer
+    %p 食べログまとめ　食べログ取り寄せ

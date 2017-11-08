@@ -381,6 +381,9 @@ $text-color: whitesmoke;
               text-align: center;
               line-height: 50px;
             }
+            &.first{
+              border-bottom: 2px solid black
+            }
           }
           .box+ .box{
             border-left: 1px solid ghostwhite;
@@ -413,7 +416,9 @@ $text-color: whitesmoke;
       .detail__body{
         padding-left: 10px;
         height: 210px;
-        .images{
+        .body__images{
+          float: left;
+          width: 170px;
           .image{
             height: 150px;
             width: 150px;
@@ -426,8 +431,69 @@ $text-color: whitesmoke;
             margin-top: 5px;
           }
         }
+        .body__data{
+          float: left;
+          height: 130px;
+          width: 450px;
+          p{
+            &.first{
+              font-size: 0.8rem;
+            }
+            &.second{
+              font-size: 0.8rem;
+            }
+            &.third{
+              font-size: 0.7rem;
+            }
+            &.forth{
+              font-size: 0.7rem;
+            }
+            &.fifth{
+              display: inline;
+              font-size: 0.7rem;
+            }
+            &.sixth{
+              display: inline;
+              font-size: 0.7rem;
+            }
+          }
+        }
+        .body__box{
+          float: left;
+          height: 130px;
+          width: 190px;
+          p{
+            font-size: 0.7rem;
+            border: 1px;
+            border-color: lightgray;
+            border-style: solid;
+            border-radius: 5px;
+          }
+        }
+        .body__review{
+          float: left;
+          height: 60px;
+          width: 640px;
+          background-color: $text-color;
+          span{
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-bottom: dotted 1px black;
+          }
+        }
+        .body__data-link{
+          float: left;
+          height: 55px;
+          width: 810px;
+          p{
+            font-size: 0.8rem;
+            background-color: $text-color;
+            -webkit-border-radius: 5px;
+          }
+        }
       }
       .detail__information{
+        clear: both;
         margin-left: 10px;
         height: 40px;
         width: 808px;
@@ -460,11 +526,11 @@ $text-color: whitesmoke;
           color: red;
         }
       }
-      .color{
-        height: 10px;
-        background-color: red;
-      }
     }
+  }
+  .color{
+    height: 10px;
+    background-color: red;
   }
   .sidebar{
     float: left;
