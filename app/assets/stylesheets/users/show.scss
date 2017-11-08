@@ -1,4 +1,5 @@
 $bordary-color: lightgray;
+$page-color: mintcream;
 
 body{
   header{
@@ -74,7 +75,7 @@ body{
             float: left;
             height: 32px;
             width: 150px;
-            background-color: whitesmoke;
+            background-color: $page-color;
             margin-top: 6px;
             -webkit-border-top-left-radius: 5px;
             -webkit-border-bottom-left-radius: 5px;
@@ -111,11 +112,11 @@ body{
       }
     }
   }
-  .first-contents{
+  .mypage__first-contents{
     position: relative;
     width: 100%;
     height: 640px;
-    background-color: mintcream;
+    background-color: $page-color;
     .frame{
       width: 1000px;
       position: absolute;
@@ -183,7 +184,7 @@ body{
           width: 300px;
           height: 140px;
           margin-top: 15px;
-          font-size: 0.8rem;
+          font-size: 0.7rem;
           font-weight: bold;
           line-height: 30px;
           position: relative;
@@ -243,9 +244,12 @@ body{
     border: 0;
     border-top: 1px solid lightgray;
   }
-  .second-contents{
+  .mypage__second-contents{
     clear: both;
     position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: $page-color;
     .flame{
       margin: 0 auto;
       position: absolute;
@@ -253,7 +257,87 @@ body{
       right: 0;
       width: 1000px;
       height: 1000px;
-      background-color: linen;
+      .left{
+        float: left;
+        width: 680px;
+        .left__favorite{
+          margin-top: 30px;
+          height: 120px;
+          background-color: whitesmoke;
+          p{
+            font-size: 0.9rem;
+            font-weight: bold;
+          }
+        }
+        .left__myshop{
+          margin-top: 50px;
+          height: 220px;
+          -webkit-border-radius: 5px;
+          background-color: white;
+          .myshop__frame{
+            padding-left: 15px;
+            width: 650px;
+            .myshop__first{
+              border-bottom: 1px solid $bordary-color;
+              a{
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-decoration: none;
+                height: 45px;
+                line-height: 45px;
+              }
+            }
+            .myshop__second{
+              border-bottom: 1px solid $bordary-color;
+              height: 45px;
+            }
+            .myshop__third{
+              border-bottom: 1px solid $bordary-color;
+              height: 63px;
+              p{
+                margin-top: 12px;
+                font-size: 0.8rem;
+              }
+            }
+            .myshop__forth{
+              height: 45px;
+              .myshop__forth__botton{
+                margin-top: 14px;
+                font-size: 1.1rem;
+              }
+            }
+          }
+        }
+      }
+      .right{
+        float: left;
+        margin-top: 30px;
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1px solid $bordary-color;
+        width: 289px;
+        height: 1000px;
+        .right__information{
+          width: 289px;
+          height: 75px;
+          background-color: lightyellow;
+          p{
+            &.first{
+              color: white;
+              background-color: darkblue;
+              font-size: 0.7rem;
+            }
+            &.second{
+              color: darkblue;
+              font-size: 0.8rem;
+            }
+          }
+
+        }
+      }
+
+
+
       .blank{
         clear: both;
         height: 50px;

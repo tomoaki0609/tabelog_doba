@@ -79,253 +79,251 @@
         .form
           %input.text-form{type: 'text', id: 'text'}
           %p.button-form 検索
-
-
-
   .information
     .back-color
       %strong お知らせ
       %a{href: 'https://www.google.co.jp'} おなかをすかせて
   .second-contents
-    .main-contents
-      %p.content-name1 お店、レストランを探す
-      .all-count
-        %p.count 8860
-        %p.count-name 店舗
-        %p.count 88477
-        %p.count-name 口コミ
-        = link_to '新しくお店を登録', new_product_path, method: :get
-      .border
-        .frame
-          %p.title 都道府県から探す
-          .images
-            .box
-              %image
-                = image_tag "/images/tokyo.jpeg", size: "157x157"
-              %p 東京
-            .box
-              %image
-                = image_tag "/images/osaka.jpeg", size: "157x157"
-              %p 大阪
-            .box
-              %image.image
-                = image_tag "/images/nagoya.jpeg", size: "157x157"
-              %p 名古屋
-            .box
-              %image.image
-                = image_tag "/images/kyoto.jpeg", size: "157x157"
-              %p 京都
-            .box
-              %image.image
-                = image_tag "/images/okinawa.jpeg", size: "157x157"
-              %p 沖縄
-          .prefectures
-            .left
-              .prefecture
-                %p 北海道・東北
-                %ul
-                  %li
-                    %a{href: '###'} 北海道
-                  %li
-                    %a{href: '###'} 青森
-                  %li
-                    %a{href: '###'} 秋田
-                  %li
-                    %a{href: '###'} 山形
-                  %li
-                    %a{href: '###'} 岩手
-                  %li
-                    %a{href: '###'} 宮城
-                  %li
-                    %a{href: '###'} 福島
-              .prefecture
-                %p 関東
-                %ul
-                  %li
-                    %a{href: '###'} 東京
-                  %li
-                    %a{href: '###'} 神奈川
-                  %li
-                    %a{href: '###'} 埼玉
-                  %li
-                    %a{href: '###'} 千葉
-                  %li
-                    %a{href: '###'} 栃木
-                  %li
-                    %a{href: '###'} 茨城
-                  %li
-                    %a{href: '###'} 群馬
-              .prefecture
-                %p 中部
-                %ul
-                  %li
-                    %a{href: '###'} 愛知
-                  %li
-                    %a{href: '###'} 岐阜
-                  %li
-                    %a{href: '###'} 静岡
-                  %li
-                    %a{href: '###'} 三重
-                  %li
-                    %a{href: '###'} 新潟
-                  %li
-                    %a{href: '###'} 山梨
-                  %li
-                    %a{href: '###'} 長野
-                  %li
-                    %a{href: '###'} 石川
-                  %li
-                    %a{href: '###'} 富山
-                  %li
-                    %a{href: '###'} 福井
-            .right
-              .prefecture
-                %p 関西
-                %ul
-                  %li
-                    %a{href: '###'} 大阪
-                  %li
-                    %a{href: '###'} 兵庫
-                  %li
-                    %a{href: '###'} 京都
-                  %li
-                    %a{href: '###'} 滋賀
-                  %li
-                    %a{href: '###'} 奈良
-                  %li
-                    %a{href: '###'} 和歌山
-              .prefecture
-                %p 中国・四国
-                %ul
-                  %li
-                    %a{href: '###'} 岡山
-                  %li
-                    %a{href: '###'} 広島
-                  %li
-                    %a{href: '###'} 鳥取
-                  %li
-                    %a{href: '###'} 島根
-                  %li
-                    %a{href: '###'} 山口
-                  %li
-                    %a{href: '###'} 香川
-                  %li
-                    %a{href: '###'} 徳島
-                  %li
-                    %a{href: '###'} 愛媛
-                  %li
-                    %a{href: '###'} 高知
-              .prefecture
-                %p 九州・沖縄
-                %ul
-                  %li
-                    %a{href: '###'} 福岡
-                  %li
-                    %a{href: '###'} 佐賀
-                  %li
-                    %a{href: '###'} 長崎
-                  %li
-                    %a{href: '###'} 熊本
-                  %li
-                    %a{href: '###'} 大分
-                  %li
-                    %a{href: '###'} 宮崎
-                  %li
-                    %a{href: '###'} 鹿児島
-                  %li
-                    %a{href: '###'} 沖縄
-      .blank1
-      .shop-infomation
-        %p お店の情報
-        .registration-button
-      .information-form
-        .top
-          .top__title
-            %strong 全国の和食のお店
-            %span 278676件
-        .bottom
-          .boxes
-            .box.first
-              %p 標準
-            .box
-              %p ランキング
-            .box
-              %p 口コミ数
-            .box
-              %p ニューオープン
-      = render "product"
-      = render "product"
-      .color
-      .blank0
+    .second-contents__frame
+      .main-contents
+        %p.content-name1 お店、レストランを探す
+        .all-count
+          %p.count 8860
+          %p.count-name 店舗
+          %p.count 88477
+          %p.count-name 口コミ
+          = link_to '新しくお店を登録', new_product_path, method: :get
+        .border
+          .frame
+            %p.title 都道府県から探す
+            .images
+              .box
+                %image
+                  = image_tag "/images/tokyo.jpeg", size: "157x157"
+                %p 東京
+              .box
+                %image
+                  = image_tag "/images/osaka.jpeg", size: "157x157"
+                %p 大阪
+              .box
+                %image.image
+                  = image_tag "/images/nagoya.jpeg", size: "157x157"
+                %p 名古屋
+              .box
+                %image.image
+                  = image_tag "/images/kyoto.jpeg", size: "157x157"
+                %p 京都
+              .box
+                %image.image
+                  = image_tag "/images/okinawa.jpeg", size: "157x157"
+                %p 沖縄
+            .prefectures
+              .left
+                .prefecture
+                  %p 北海道・東北
+                  %ul
+                    %li
+                      %a{href: '###'} 北海道
+                    %li
+                      %a{href: '###'} 青森
+                    %li
+                      %a{href: '###'} 秋田
+                    %li
+                      %a{href: '###'} 山形
+                    %li
+                      %a{href: '###'} 岩手
+                    %li
+                      %a{href: '###'} 宮城
+                    %li
+                      %a{href: '###'} 福島
+                .prefecture
+                  %p 関東
+                  %ul
+                    %li
+                      %a{href: '###'} 東京
+                    %li
+                      %a{href: '###'} 神奈川
+                    %li
+                      %a{href: '###'} 埼玉
+                    %li
+                      %a{href: '###'} 千葉
+                    %li
+                      %a{href: '###'} 栃木
+                    %li
+                      %a{href: '###'} 茨城
+                    %li
+                      %a{href: '###'} 群馬
+                .prefecture
+                  %p 中部
+                  %ul
+                    %li
+                      %a{href: '###'} 愛知
+                    %li
+                      %a{href: '###'} 岐阜
+                    %li
+                      %a{href: '###'} 静岡
+                    %li
+                      %a{href: '###'} 三重
+                    %li
+                      %a{href: '###'} 新潟
+                    %li
+                      %a{href: '###'} 山梨
+                    %li
+                      %a{href: '###'} 長野
+                    %li
+                      %a{href: '###'} 石川
+                    %li
+                      %a{href: '###'} 富山
+                    %li
+                      %a{href: '###'} 福井
+              .right
+                .prefecture
+                  %p 関西
+                  %ul
+                    %li
+                      %a{href: '###'} 大阪
+                    %li
+                      %a{href: '###'} 兵庫
+                    %li
+                      %a{href: '###'} 京都
+                    %li
+                      %a{href: '###'} 滋賀
+                    %li
+                      %a{href: '###'} 奈良
+                    %li
+                      %a{href: '###'} 和歌山
+                .prefecture
+                  %p 中国・四国
+                  %ul
+                    %li
+                      %a{href: '###'} 岡山
+                    %li
+                      %a{href: '###'} 広島
+                    %li
+                      %a{href: '###'} 鳥取
+                    %li
+                      %a{href: '###'} 島根
+                    %li
+                      %a{href: '###'} 山口
+                    %li
+                      %a{href: '###'} 香川
+                    %li
+                      %a{href: '###'} 徳島
+                    %li
+                      %a{href: '###'} 愛媛
+                    %li
+                      %a{href: '###'} 高知
+                .prefecture
+                  %p 九州・沖縄
+                  %ul
+                    %li
+                      %a{href: '###'} 福岡
+                    %li
+                      %a{href: '###'} 佐賀
+                    %li
+                      %a{href: '###'} 長崎
+                    %li
+                      %a{href: '###'} 熊本
+                    %li
+                      %a{href: '###'} 大分
+                    %li
+                      %a{href: '###'} 宮崎
+                    %li
+                      %a{href: '###'} 鹿児島
+                    %li
+                      %a{href: '###'} 沖縄
+        .blank1
+        .shop-infomation
+          %p お店の情報
+          .registration-button
+        .information-form
+          .top
+            .top__title
+              %strong 全国の和食のお店
+              %span 278676件
+          .bottom
+            .boxes
+              .box.first
+                %p 標準
+              .box
+                %p ランキング
+              .box
+                %p 口コミ数
+              .box
+                %p ニューオープン
+        = render "product"
+        = render "product"
+        .color
+        .blank0
 
 
 
 
 
-    .sidebar
-      .mypage-color
-        .mypage
-          .mypage-inside
-            -if user_signed_in?
-              .image
-                = image_tag current_user.avatar, size: "64x64"
-            -if user_signed_in?
-              .name
-                %p= current_user.nickname
-                %p{style: "font-size: 5px"} さん
-            -else
-              .blank
-            .infomation
-              %p 携帯電話番号認証にご協力ください
-            .mypage__menu
-              .contents
-                %ul
-                  %li ログ
-                  %li 行ったお店
-                  %li 行きたいお店
-                  %li フォロー中
-                  %li フォロワー
-                  %li 下書き一覧
-                  %li 公開中口コミ一覧
-              .count
-                %ul
-                  %li 0
-                  %li 0
-                  %li 0
-                  %li 0
-                  %li 0
-                  %li 0
-                  %li 0
-            .creditcard-service
-              %p クレジットカードで初月無料
-              .backcolor
-                %p プレミアムサービスについて
-      .blank1
-      .blank2
-      .review-serch
-        %p レビュアーを探す
-        .form
-          %input.text-form{type: 'text', id: 'text', value: 'レビュアー名'}
-          %p.button-form 検索
-      .reviewer-link
-        %a{href: 'http://google.co.jp'} 全国のレビュアーから探す
-      .facebook
-        %a{href: "###"}
-          %i.fa.fa-facebook-square.fa-fw.fa-2x.faa-tada.animated-hover
-          .text
-            %p 友達をフォローして
-            %p オススメのお店をチェックしよう
-      .blank3
-      %p.title あなたの好みに似ているユーザー
-      .blank4
-      .blank5
+      .sidebar
+        .mypage-color
+          .mypage
+            .mypage-inside
+              -if user_signed_in?
+                .image
+                  = image_tag current_user.avatar, size: "64x64"
+              -if user_signed_in?
+                .name
+                  %p= current_user.nickname
+                  %p{style: "font-size: 5px"} さん
+              -else
+                .blank
+              .infomation
+                %p 携帯電話番号認証にご協力ください
+              .mypage__menu
+                .contents
+                  %ul
+                    %li ログ
+                    %li 行ったお店
+                    %li 行きたいお店
+                    %li フォロー中
+                    %li フォロワー
+                    %li 下書き一覧
+                    %li 公開中口コミ一覧
+                .count
+                  %ul
+                    %li 0
+                    %li 0
+                    %li 0
+                    %li 0
+                    %li 0
+                    %li 0
+                    %li 0
+              .creditcard-service
+                %p クレジットカードで初月無料
+                .backcolor
+                  %p プレミアムサービスについて
+        .blank1
+        .blank2
+        .review-serch
+          %p レビュアーを探す
+          .form
+            %input.text-form{type: 'text', id: 'text', value: 'レビュアー名'}
+            %p.button-form 検索
+        .reviewer-link
+          %a{href: 'http://google.co.jp'} 全国のレビュアーから探す
+        .facebook
+          %a{href: "###"}
+            %i.fa.fa-facebook-square.fa-fw.fa-2x.faa-tada.animated-hover
+            .text
+              %p 友達をフォローして
+              %p オススメのお店をチェックしよう
+        .blank3
+        %p.title あなたの好みに似ているユーザー
+        .blank4
+        .blank5
   .third-contents
-    %p 全ジャンル別
-  .forth-contents
     %p 条件・目的からお店を探す
+  .forth-contents
+    %p 全ジャンル別
   .fifth-contents
     %p 特集
   .footer-before
     %p 店舗運営者の方へ
   %footer
-    %p 食べログまとめ　食べログ取り寄せ
+    %p 食べログまとめ  食べログ取り寄せ

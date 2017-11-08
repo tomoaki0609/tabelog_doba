@@ -1,7 +1,7 @@
 %head
 %body
   = render "header"
-  .first-contents
+  .mypage__first-contents
     .frame
       .link
       .back-image
@@ -53,8 +53,24 @@
           %p.count 0
           %p.item フォロワー
   %hr.line
-  .second-contents
+  .mypage__second-contents
     .flame
+      .left
+        .left__favorite
+          %p おすすめレストラン
+        .left__myshop
+          .myshop__frame
+            .myshop__first
+              %a{href: '###'} 日の屋カレー
+            .myshop__second
+            .myshop__third
+              %p 料理の提供が素早い
+            .myshop__forth
+              %input.myshop__forth__botton{type:"button", value: "いいね！を取り消す"}
+
+      .right
+        .right__information
+          %p.first お知らせ
+          %p.second 全国ピザTOP100  『食べログ ピザ百名店』 を発表しました。詳しくはこちら
       .blank
-      .favorite
 
