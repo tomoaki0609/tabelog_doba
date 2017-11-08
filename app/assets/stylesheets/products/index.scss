@@ -181,7 +181,6 @@ $text-color: whitesmoke;
 }
 
 .information{
-  margin-top: 270px;
   min-width: 1000px;
   height: 70px;
   .back-color{
@@ -209,486 +208,492 @@ $text-color: whitesmoke;
 }
 
 .second-contents{
-  width: 1120px;
   margin: 0 auto;
-  .main-contents{
-    float: left;
-    position: relative;
-    width: 830px;
-    height: 1000px;
-    .content-name1{
+  height: 2000px;
+  .second-contents__frame{
+    width: 1120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .main-contents{
       float: left;
-      font-size: 20px;
-      font-weight: bold;
-    }
-    .all-count{
-      margin-left: 480px;
-      font-weight: bold;
-      .count-name{
-        display: inline;
-        font-size: 0.7rem;
-      }
-      .count{
-        display: inline;
-        font-size: 0.9rem;
-        margin-left: 20px;
-      }
-      .registry{
-        display: inline;
-        margin-left: 20px;
-      }
-    }
-    .border{
+      position: relative;
       width: 830px;
-      height: 450px;
-      border: groove lightgray 1px;
-      margin-top: 25px;
-      -webkit-border-radius: 5px;
-      .frame{
-        width: 800px;
-        height: 400px;
-        padding: 25px 15px;
-        .title{
-          margin-left: 3px;
-          font-weight: bold;
-          font-size: 0.8rem;
-        }
-        .images{
-          margin-top: 10px;
-          .box{
-            position: relative;
-            float: left;
-            margin: -2px;
-            p{
-              position: absolute;
-              top: 37%;
-              left: 37%;
-              font-size: 1.5rem;
-              font-weight: bold;
-              color: white;
-            }
-          }
-        }
-        .prefectures{
-          font-size: 0.8rem;
-          clear: both;
-          .left{
-            float: left;
-            .prefecture{
-              margin-top: 10px;
-              height: 50px;
-              width: 370px;
-              p{
-                line-height: 1.5rem;
-              }
-              ul{
-                margin-top: 3px;
-              }
-              li{
-                display: inline-block;
-                height: 0.8rem;
-              }
-              li+ li {
-                padding-left: 5px;
-                border-left: 1px dotted lightgray;
-              }
-              a{
-                line-height: 1rem;
-                vertical-align: 10%;
-                color: darkblue;
-                text-decoration: none;
-              }
-            }
-          }
-          .right{
-            float: right;
-            .prefecture{
-              margin-top: 10px;
-              height: 50px;
-              width: 370px;
-              p{
-                line-height: 1.5rem;
-              }
-              ul{
-                margin-top: 3px;
-              }
-              li{
-                display: inline-block;
-                height: 0.8rem;
-              }
-              li+ li {
-                padding-left: 5px;
-                border-left: 1px dotted lightgray;
-              }
-              a{
-                line-height: 1rem;
-                vertical-align: 10%;
-                color: darkblue;
-                text-decoration: none;
-              }
-            }
-          }
-        }
-      }
-    }
-    .blank1{
-      height: 45px;
-      border-bottom: solid $text-color 1px;
-    }
-    .shop-infomation{
-      margin-top: 30px;
-      p{
-        font-size: 1.2rem;
+      height: 1000px;
+      .content-name1{
+        float: left;
+        font-size: 20px;
         font-weight: bold;
       }
-      .frame{
-      }
-    }
-    .information-form{
-      margin-top: 25px;
-      height: 170px;
-      border-top: solid lightgray 5px;
-      .top{
-        height: 120px;
-        background-color: $text-color;
-        .top__title{
-          padding-top: 20px;
-          padding-left:20px;
-          strong{
-            margin-right: 0.5rem;
-            display: inline;
-            font-weight: bold;
-          }
-          span{
-            display: inline;
-            font-size: 0.8rem;
-            font-weight: bold;
-          }
-        }
-      }
-      .bottom{
-        height: 50px;
-        background-color: $text-color;
-        .boxes{
-          padding-left: 15px;
-          .box{
-            float: left;
-            height: 50px;
-            width: 200px;
-            border-top: 1px solid ghostwhite;
-            border-bottom: 1px solid ghostwhite;
-            p{
-              text-align: center;
-              line-height: 50px;
-            }
-            &.first{
-              border-bottom: 2px solid black
-            }
-          }
-          .box+ .box{
-            border-left: 1px solid ghostwhite;
-          }
-        }
-      }
-    }
-    .detail{
-      height: 440px;
-      .blank2{
-        clear: both;
-        border-bottom: solid ghostwhite 3px;
-        p{
-          text-align: left;
-          height: 40px;
-          line-height: 40px;
-          font-size: 0.8rem;
-        }
-      }
-      .detail__header{
-        height: 50px;
-        a{
-          height: 50px;
-          line-height: 50px;
-          padding-left: 30px;
-          font-weight: bold;
-          color: darkblue;
-        }
-      }
-      .detail__body{
-        padding-left: 10px;
-        height: 210px;
-        .body__images{
-          float: left;
-          width: 170px;
-          .image{
-            height: 150px;
-            width: 150px;
-            padding: 4px;
-            border: 1px;
-            border-color: gray;
-            border-style: solid;
-          }
-          .mini-image{
-            margin-top: 5px;
-          }
-        }
-        .body__data{
-          float: left;
-          height: 130px;
-          width: 450px;
-          p{
-            &.first{
-              font-size: 0.8rem;
-            }
-            &.second{
-              font-size: 0.8rem;
-            }
-            &.third{
-              font-size: 0.7rem;
-            }
-            &.forth{
-              font-size: 0.7rem;
-            }
-            &.fifth{
-              display: inline;
-              font-size: 0.7rem;
-            }
-            &.sixth{
-              display: inline;
-              font-size: 0.7rem;
-            }
-          }
-        }
-        .body__box{
-          float: left;
-          height: 130px;
-          width: 190px;
-          p{
-            font-size: 0.7rem;
-            border: 1px;
-            border-color: lightgray;
-            border-style: solid;
-            border-radius: 5px;
-          }
-        }
-        .body__review{
-          float: left;
-          height: 60px;
-          width: 640px;
-          background-color: $text-color;
-          span{
-            font-size: 0.8rem;
-            font-weight: bold;
-            border-bottom: dotted 1px black;
-          }
-        }
-        .body__data-link{
-          float: left;
-          height: 55px;
-          width: 810px;
-          p{
-            font-size: 0.8rem;
-            background-color: $text-color;
-            -webkit-border-radius: 5px;
-          }
-        }
-      }
-      .detail__information{
-        clear: both;
-        margin-left: 10px;
-        height: 40px;
-        width: 808px;
-        border: 1px;
-        border-color: gray;
-        border-style: solid;
-        p{
+      .all-count{
+        margin-left: 480px;
+        font-weight: bold;
+        .count-name{
           display: inline;
-          line-height: 40px;
-          font-size: 0.8rem;
-          font-weight: bold;
-          &.first{
-            margin-left: 10px;
-            background-color: gray;
-            color: white;
-          }
+          font-size: 0.7rem;
         }
-
-        .second{
-          color: mediumblue;
+        .count{
+          display: inline;
+          font-size: 0.9rem;
+          margin-left: 20px;
         }
-        .third{
-          float: right;
-          padding-right: 10px;
-          font-size: 0.6rem;
-          color: gray;
-        }
-        .forth{
-          float: right;
-          color: red;
+        .registry{
+          display: inline;
+          margin-left: 20px;
         }
       }
-    }
-  }
-  .color{
-    height: 10px;
-    background-color: red;
-  }
-  .sidebar{
-    float: left;
-    margin-left: 20px;
-    width: 270px;
-    height: 2740px;
-    background-color: snow;
-    .mypage-color{
-      width: 270px;
-      height: 470px;
-      background-color: $text-color;
-      -webkit-border-radius: 5px;
-      position: relative;
-      .mypage{
-        width: 240px;
-        height: 440px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        background-color: white;
+      .border{
+        width: 830px;
+        height: 450px;
+        border: groove lightgray 1px;
+        margin-top: 25px;
         -webkit-border-radius: 5px;
-        .mypage-inside{
-          padding: 10px;
-          .image{
-            float: left;
-            height: 64px;
-            padding: 4px;
-            border: 1px;
-            border-color: lightgray;
-            border-style: solid;
-            border-radius: 5px;
-          }
-          .name{
-            margin-left: 85px;
+        .frame{
+          width: 800px;
+          height: 400px;
+          padding: 25px 15px;
+          .title{
+            margin-left: 3px;
             font-weight: bold;
-          }
-          .blank{
-            height: 40px;
-          }
-          .infomation{
-            font-size: 0.7rem;
-            clear: both;
-            background-color: papayawhip;
-            margin-top: 40px;
-            height: 30px;
-            line-height: 30px;
-            text-align: center;
-          }
-          .mypage__menu{
-            margin-top: 10px;
             font-size: 0.8rem;
-            color: lightgray;
-            .contents{
-              float:left;
-              width: 90%;
-            }
-            .count{
-              float:right;
-              text-align: right;
-              width: 10%;
-            }
-            ul li{
-              border-top: solid lightgray 1px;
-              line-height: 2rem;
+          }
+          .images{
+            margin-top: 10px;
+            .box{
+              position: relative;
+              float: left;
+              margin: -2px;
+              p{
+                position: absolute;
+                top: 37%;
+                left: 37%;
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: white;
+              }
             }
           }
-          .creditcard-service{
+          .prefectures{
+            font-size: 0.8rem;
             clear: both;
-            height: 65px;
-            font-size: 0.7rem;
-            background-color: papayawhip;
-            text-align: center;
-            p{
-              height: 30px;
-              line-height: 30px;
-              padding-top: 0px;
+            .left{
+              float: left;
+              .prefecture{
+                margin-top: 10px;
+                height: 50px;
+                width: 370px;
+                p{
+                  line-height: 1.5rem;
+                }
+                ul{
+                  margin-top: 3px;
+                }
+                li{
+                  display: inline-block;
+                  height: 0.8rem;
+                }
+                li+ li {
+                  padding-left: 5px;
+                  border-left: 1px dotted lightgray;
+                }
+                a{
+                  line-height: 1rem;
+                  vertical-align: 10%;
+                  color: darkblue;
+                  text-decoration: none;
+                }
+              }
             }
-            .backcolor{
-              background-color: mediumvioletred;
-              height: 30px;
-              line-height: 30px;
-              width: 90%;
-              margin: 0 auto;
+            .right{
+              float: right;
+              .prefecture{
+                margin-top: 10px;
+                height: 50px;
+                width: 370px;
+                p{
+                  line-height: 1.5rem;
+                }
+                ul{
+                  margin-top: 3px;
+                }
+                li{
+                  display: inline-block;
+                  height: 0.8rem;
+                }
+                li+ li {
+                  padding-left: 5px;
+                  border-left: 1px dotted lightgray;
+                }
+                a{
+                  line-height: 1rem;
+                  vertical-align: 10%;
+                  color: darkblue;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .blank1{
+        height: 45px;
+        border-bottom: solid $text-color 1px;
+      }
+      .shop-infomation{
+        margin-top: 30px;
+        p{
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        .frame{
+        }
+      }
+      .information-form{
+        margin-top: 25px;
+        height: 170px;
+        border-top: solid lightgray 5px;
+        .top{
+          height: 120px;
+          background-color: $text-color;
+          .top__title{
+            padding-top: 20px;
+            padding-left:20px;
+            strong{
+              margin-right: 0.5rem;
+              display: inline;
+              font-weight: bold;
+            }
+            span{
+              display: inline;
+              font-size: 0.8rem;
+              font-weight: bold;
+            }
+          }
+        }
+        .bottom{
+          height: 50px;
+          background-color: $text-color;
+          .boxes{
+            padding-left: 15px;
+            .box{
+              float: left;
+              height: 50px;
+              width: 200px;
+              border-top: 1px solid ghostwhite;
+              border-bottom: 1px solid ghostwhite;
+              p{
+                text-align: center;
+                line-height: 50px;
+              }
+              &.first{
+                border-bottom: 2px solid black
+              }
+            }
+            .box+ .box{
+              border-left: 1px solid ghostwhite;
+            }
+          }
+        }
+      }
+      .detail{
+        height: 440px;
+        .blank2{
+          clear: both;
+          border-bottom: solid ghostwhite 3px;
+          p{
+            text-align: left;
+            height: 40px;
+            line-height: 40px;
+            font-size: 0.8rem;
+          }
+        }
+        .detail__header{
+          height: 50px;
+          a{
+            height: 50px;
+            line-height: 50px;
+            padding-left: 30px;
+            font-weight: bold;
+            color: darkblue;
+          }
+        }
+        .detail__body{
+          padding-left: 10px;
+          height: 210px;
+          .body__images{
+            float: left;
+            width: 170px;
+            .image{
+              height: 150px;
+              width: 150px;
+              padding: 4px;
+              border: 1px;
+              border-color: gray;
+              border-style: solid;
+            }
+            .mini-image{
+              margin-top: 5px;
+            }
+          }
+          .body__data{
+            float: left;
+            height: 130px;
+            width: 450px;
+            p{
+              &.first{
+                font-size: 0.8rem;
+              }
+              &.second{
+                font-size: 0.8rem;
+              }
+              &.third{
+                font-size: 0.7rem;
+              }
+              &.forth{
+                font-size: 0.7rem;
+              }
+              &.fifth{
+                display: inline;
+                font-size: 0.7rem;
+              }
+              &.sixth{
+                display: inline;
+                font-size: 0.7rem;
+              }
+            }
+          }
+          .body__box{
+            float: left;
+            height: 130px;
+            width: 190px;
+            p{
+              font-size: 0.7rem;
+              border: 1px;
+              border-color: lightgray;
+              border-style: solid;
+              border-radius: 5px;
+            }
+          }
+          .body__review{
+            float: left;
+            height: 60px;
+            width: 640px;
+            background-color: $text-color;
+            span{
+              font-size: 0.8rem;
+              font-weight: bold;
+              border-bottom: dotted 1px black;
+            }
+          }
+          .body__data-link{
+            float: left;
+            height: 55px;
+            width: 810px;
+            p{
+              font-size: 0.8rem;
+              background-color: $text-color;
+              -webkit-border-radius: 5px;
+            }
+          }
+        }
+        .detail__information{
+          clear: both;
+          margin-left: 10px;
+          height: 40px;
+          width: 808px;
+          border: 1px;
+          border-color: gray;
+          border-style: solid;
+          p{
+            display: inline;
+            line-height: 40px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            &.first{
+              margin-left: 10px;
+              background-color: gray;
               color: white;
             }
           }
+
+          .second{
+            color: mediumblue;
+          }
+          .third{
+            float: right;
+            padding-right: 10px;
+            font-size: 0.6rem;
+            color: gray;
+          }
+          .forth{
+            float: right;
+            color: red;
+          }
         }
       }
     }
-    .blank1{
-      height: 30px;
-      background-color: white;
-      border-bottom: groove whitesmoke 1px;
+    .color{
+      height: 10px;
+      background-color: red;
     }
-    .blank2{
-      height: 30px;
-      background-color: white;
-    }
-    .review-serch{
-      font-size: 0.7rem;
-      .form{
-        width: 100%;
-        .text-form{
+    .sidebar{
+      float: left;
+      margin-left: 20px;
+      width: 270px;
+      height: 1740px;
+      .mypage-color{
+        width: 270px;
+        height: 470px;
+        background-color: $text-color;
+        -webkit-border-radius: 5px;
+        position: relative;
+        .mypage{
+          width: 240px;
+          height: 440px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          background-color: white;
+          -webkit-border-radius: 5px;
+          .mypage-inside{
+            padding: 10px;
+            .image{
+              float: left;
+              height: 64px;
+              padding: 4px;
+              border: 1px;
+              border-color: lightgray;
+              border-style: solid;
+              border-radius: 5px;
+            }
+            .name{
+              margin-left: 85px;
+              font-weight: bold;
+            }
+            .blank{
+              height: 40px;
+            }
+            .infomation{
+              font-size: 0.7rem;
+              clear: both;
+              background-color: papayawhip;
+              margin-top: 40px;
+              height: 30px;
+              line-height: 30px;
+              text-align: center;
+            }
+            .mypage__menu{
+              margin-top: 10px;
+              font-size: 0.8rem;
+              color: lightgray;
+              .contents{
+                float:left;
+                width: 90%;
+              }
+              .count{
+                float:right;
+                text-align: right;
+                width: 10%;
+              }
+              ul li{
+                border-top: solid lightgray 1px;
+                line-height: 2rem;
+              }
+            }
+            .creditcard-service{
+              clear: both;
+              height: 65px;
+              font-size: 0.7rem;
+              background-color: papayawhip;
+              text-align: center;
+              p{
+                height: 30px;
+                line-height: 30px;
+                padding-top: 0px;
+              }
+              .backcolor{
+                background-color: mediumvioletred;
+                height: 30px;
+                line-height: 30px;
+                width: 90%;
+                margin: 0 auto;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      .blank1{
+        height: 30px;
+        background-color: white;
+        border-bottom: groove whitesmoke 1px;
+      }
+      .blank2{
+        height: 30px;
+        background-color: white;
+      }
+      .review-serch{
+        font-size: 0.7rem;
+        .form{
+          width: 100%;
+          .text-form{
+            float: left;
+            height: 30px;
+            width: 85%;
+            color: lightgray;
+          }
+          .button-form{
+            float: left;
+            width: 13%;
+            height: 34px;
+            line-height: 34px;
+            background-color: lightgray;
+            text-align: center;
+          }
+        }
+      }
+      .reviewer-link{
+        clear: both;
+        margin-top: 40px;
+        margin-bottom: 30px;
+        text-align: right;
+        font-size: 0.7rem;
+      }
+      .facebook{
+        padding-top: 15px;
+        background-color: lightgray;
+        height: 40px;
+        .fa {
+          color: perple;
           float: left;
-          height: 30px;
-          width: 85%;
-          color: lightgray;
         }
-        .button-form{
+        .text{
           float: left;
-          width: 13%;
-          height: 34px;
-          line-height: 34px;
-          background-color: lightgray;
-          text-align: center;
+          font-size: 0.6rem;
+          text-decoration: underline;
         }
       }
-    }
-    .reviewer-link{
-      clear: both;
-      margin-top: 40px;
-      margin-bottom: 30px;
-      text-align: right;
-      font-size: 0.7rem;
-    }
-    .facebook{
-      padding-top: 15px;
-      background-color: lightgray;
-      height: 40px;
-      .fa {
-        color: perple;
-        float: left;
+      .blank3{
+        height: 30px;
+        background-color: white;
+        clear: both;
       }
-      .text{
-        float: left;
-        font-size: 0.6rem;
-        text-decoration: underline;
+      .title{
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: gray;
       }
-    }
-    .blank3{
-      height: 30px;
-      background-color: white;
-      clear: both;
-    }
-    .title{
-      font-size: 0.9rem;
-      font-weight: bold;
-      color: gray;
-    }
-    .blank4{
-      height: 5px;
-      border-bottom: thin groove whitesmoke;
-    }
-    .blank5{
-      height: 5px;
+      .blank4{
+        height: 5px;
+        border-bottom: thin groove whitesmoke;
+      }
+      .blank5{
+        height: 5px;
+      }
     }
   }
 }
