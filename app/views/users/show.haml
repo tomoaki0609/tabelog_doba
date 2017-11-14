@@ -1,4 +1,5 @@
 %head
+  %link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", :rel => "stylesheet"}/
 %body
   = render "header"
   .mypage__first-contents
@@ -58,15 +59,7 @@
       .left
         .left__favorite
           %p おすすめレストラン
-        .left__myshop
-          .myshop__frame
-            .myshop__first
-              %a{href: '###'} 日の屋カレー
-            .myshop__second
-            .myshop__third
-              %p 料理の提供が素早い
-            .myshop__forth
-              %input.myshop__forth__botton{type:"button", value: "いいね！を取り消す"}
+        = render "my-product"
 
       .right
         .right__information

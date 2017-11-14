@@ -50,9 +50,10 @@ body{
         }
       }
       .bottom-color{
-        background-color: red;
         width: 100%;
         z-index: 10;
+        height: 90px;
+        border-bottom: solid 2px $bordary-color;
         .bottom-fixed{
           position: absolute;
           left: 0;
@@ -262,6 +263,7 @@ body{
         width: 680px;
         .left__favorite{
           margin-top: 30px;
+          margin-bottom: 50px;
           height: 120px;
           background-color: whitesmoke;
           p{
@@ -270,7 +272,7 @@ body{
           }
         }
         .left__myshop{
-          margin-top: 50px;
+          margin-top: 25px;
           height: 220px;
           -webkit-border-radius: 5px;
           background-color: white;
@@ -285,6 +287,17 @@ body{
                 text-decoration: none;
                 height: 45px;
                 line-height: 45px;
+              }
+              p{
+                display: inline;
+                font-size: 0.7rem;
+              }
+              .fa {
+                float: right;
+                margin-left: 10px;
+                height: 45px;
+                line-height: 45px;
+                color: black;
               }
             }
             .myshop__second{

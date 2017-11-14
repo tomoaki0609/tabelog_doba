@@ -2,7 +2,10 @@
   .frame
     .top
       .title
-        %p #{current_user.nickname}さんのトップページ『#{current_user.nickname}のレストランガイド』
+        -if @product.present?
+          %p #{@product.shop_name} - #{@product.address2} #{@product.genre}
+        -else
+          %p #{current_user.nickname}さんのトップページ『#{current_user.nickname}のレストランガイド』
       .user-menu
         %ul
           %li
