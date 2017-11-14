@@ -12,7 +12,6 @@ $text-color: whitesmoke;
     .top__header{
       height: 45px;
       line-height: 40px;
-      border-bottom: solid 1px $bordary-color;
       a{
         font-size: 0.7rem;
         display: inline;
@@ -103,7 +102,102 @@ $text-color: whitesmoke;
   }
 }
 .shop-detail{
+  position: relative;
+  margin-top: 282px;
   height: 284px;
   width: 100%;
-  border-bottom: solid 2px $bordary-color;
+  border-top: solid 2px $bordary-color;
+  &__frame{
+    padding-top: 20px;
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    &__left{
+      float: left;
+      width: 680px;
+      p{
+        font-weight: bold;
+        &.first{
+
+        }
+      }
+      &__images{
+        padding-top: 10px;
+        &__first{
+        }
+        &__second{
+        }
+      }
+      a{
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+      &__blank{
+        height: 40px;
+        border-bottom: solid 1px $bordary-color;
+      }
+      &__review{
+        padding-top: 30px;
+        &__name{
+          float: left;
+          a.first{
+            display: block;
+            width: 55px;
+            font-weight: normal;
+          }
+        }
+        &__detail{
+          float: left;
+          margin-left: 73px;
+          position: relative;
+          border: 1px solid $bordary-color;
+          -webkit-border-radius: 5px;
+          height: 145px;
+          width: 550px;
+          &:before{
+              content: "";
+              position: absolute;
+              top: 30px;
+              left: -58px;
+              width: 13px;
+              height: 12px;
+              bottom: 0;
+              background: $text-color;
+              border-radius: 50%;
+          }
+
+          &:after{
+              content: "";
+              position: absolute;
+              top: 30px;
+              left: -34px;
+              width: 20px;
+              height: 18px;
+              bottom: 3px;
+              background: $text-color;
+              border-radius: 50%;
+          }
+          &__text{
+            padding-top: 10px;
+            padding-left: 10px;
+            p{
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+    &__right{
+      float: left;
+      margin-left: 25px;
+      width: 295px;
+      height: 1000px;
+      p{
+        font-weight: bold;
+      }
+
+    }
+  }
 }

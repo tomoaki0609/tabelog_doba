@@ -36,7 +36,50 @@
           .top__menu__boxes__box
             %p 地図
   .shop-detail
-    %p 口コミ
+    .shop-detail__frame
+      .shop-detail__frame__left
+        %p 写真
+        .shop-detail__frame__left__images
+          .shop-detail__frame__left__images__first
+            %image
+              = image_tag "/images/チャオタイ1.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ2.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ3.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ4.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ5.jpg", size: "125x125"
+          .shop-detail__frame__left__images__second
+            %image
+              = image_tag "/images/チャオタイ1.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ2.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ3.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ4.jpg", size: "125x125"
+            %image
+              = image_tag "/images/チャオタイ5.jpg", size: "125x125"
+        %a{href: '###'} もっと見る
+        .shop-detail__frame__left__blank
+        .shop-detail__frame__left__review
+          .shop-detail__frame__left__review__name
+            %p.first 口コミ
+            %image
+              = image_tag "/images/gorilla.jpg", size: "35x35"
+            %a.first ごりらりごりらりごりらりごりら
+          .shop-detail__frame__left__review__detail
+            .shop-detail__frame__left__review__detail__text
+              %p「さくらまつり」 桜色に染まっていく麺が、白キクラゲが、イカが美しい「イエ
+              %p ２０１７年・桜まつり、残すも、あと２つ！勝手に桜まつりと称して、桜のオヤツやら、、、
+              %a 続きを読む
+              %image
+                = image_tag "/images/だんご.jpeg", size: "55x55"
+
+      .shop-detail__frame__right
+        %p 周辺のお店のランキング
 
 
 
