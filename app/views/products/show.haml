@@ -1,0 +1,51 @@
+%body
+  = render "users/header"
+  .top
+    .top__flame
+      .top__header
+        %a{href: '###'} 食べログ
+        %p >
+        %a{href: '###'} 東京
+        %p >
+        %a{href: '###'} 渋谷
+      .top__shop-information
+        .top__shop-information__left
+          .top__shop-information__left__first
+            %p #{@product.shop_name}
+            %p ★星
+          .top__shop-information__left__second
+            %strong.first 場所:
+            %p #{@product.address2}
+            %strong ジャンル:
+            %p #{@product.genre}
+            %strong.second 予算: 昼〜¥999 夜〜¥1999
+        .top__shop-information__right
+          .top__shop-information__right__first
+          .top__shop-information__right__second
+            %p #{@product.phone_number}
+      .top__menu
+        .top__menu__boxes
+          .top__menu__boxes__box.first
+            %p 店舗トップ
+          .top__menu__boxes__box
+            %p メニュー・コース
+          .top__menu__boxes__box
+            %p 写真
+          .top__menu__boxes__box
+            %p 口コミ
+          .top__menu__boxes__box
+            %p 地図
+  .shop-detail
+    %p 口コミ
+
+
+
+
+
+
+
+
+
+
+
+

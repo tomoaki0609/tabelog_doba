@@ -7,7 +7,6 @@
 |email|text|null: false, unique:true|
 |avatar|||
 - has_many :products
-- has_many :products, through: :product_users
 - has_many :reviews
 
 
@@ -23,21 +22,13 @@
 |address3|text|null: false,|
 |genre|text|null: false,|
 |image_url|text||
+|catchphrase|text||
 |detail|text||
-- has_many :users
-- has_many :users, through: :product_users
+- belongs_to :user
 - has_many :reviews
 
-## product_users table
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer||
-|product_id|integer||
 
-- belongs_to :user
-- belongs_to :product
-
-## review table
+## reviews table
 |Column|Type|Options|
 |------|----|-------|
 |rate|integer||

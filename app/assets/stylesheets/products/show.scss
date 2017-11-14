@@ -1,0 +1,109 @@
+$bordary-color: lightgray;
+$text-color: whitesmoke;
+
+.top{
+  position: relative;
+  .top__flame{
+    width: 1000px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    .top__header{
+      height: 45px;
+      line-height: 40px;
+      border-bottom: solid 1px $bordary-color;
+      a{
+        font-size: 0.7rem;
+        display: inline;
+        text-decoration: none;
+        color: darkblue;
+      }
+      p{
+        font-size: 0.7rem;
+        display: inline;
+      }
+    }
+    .top__shop-information{
+      height: 185px;
+      &__left{
+        float: left;
+        width: 670px;
+        height: 185px;
+        &__first{
+          padding-top: 15px;
+          height: 105px;
+          border-bottom: dotted 1px $bordary-color;
+          p{
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
+        &__second{
+          margin-top: 15px;
+          height: 55px;
+          strong{
+            font-weight: bold;
+            font-size: 0.7rem;
+            line-height: 20px;
+            &.first{
+              margin-top: 100px;
+            }
+            &.second{
+              display: block;
+              font-weight: normal;
+            }
+          }
+          p{
+            display: inline;
+            font-size: 0.7rem;
+          }
+        }
+      }
+      &__right{
+        float: left;
+        margin-left: 20px;
+        width: 310px;
+        height: 185px;
+        &__second{
+          p{
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .top__menu{
+      height: 50px;
+      background-color: ghostwhite;
+      &__boxes{
+        &__box{
+          float: left;
+          height: 50px;
+          width: 198px;
+          border: 1px solid $bordary-color;
+          border-bottom: 2px solid black;
+          p{
+            font-size: 0.9rem;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+          }
+          &.first{
+            background-color: black;
+            p{
+              color: white;
+            }
+          }
+        }
+        &__box+ __box{
+        }
+      }
+    }
+  }
+}
+.shop-detail{
+  height: 284px;
+  width: 100%;
+  border-bottom: solid 2px $bordary-color;
+}

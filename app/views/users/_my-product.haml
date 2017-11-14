@@ -1,0 +1,15 @@
+-@products.each do |product|
+  .left__myshop
+    .myshop__frame
+      .myshop__first
+        = link_to product.shop_name, "/products/#{product.id}"
+        %p (#{product.address2} / #{product.genre})
+        = link_to "/products/#{product.id}/edit" do
+          %i.fa.fa-pencil-square-o.fa-lg
+        = link_to "/products/#{product.id}", method: :delete do
+          %i.fa.trush.fa-trash-o.fa-lg
+      .myshop__second
+      .myshop__third
+        %p #{product.detail}
+      .myshop__forth
+        %input.myshop__forth__botton{type:"button", value: "いいね！を取り消す"}
