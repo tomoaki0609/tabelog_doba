@@ -139,7 +139,7 @@ $text-color: whitesmoke;
         border-bottom: solid 1px $bordary-color;
       }
       &__review{
-        padding-top: 30px;
+        margin-top: 30px;
         &__name{
           float: left;
           a.first{
@@ -187,6 +187,11 @@ $text-color: whitesmoke;
             }
           }
         }
+      }
+      &__blank{
+        margin-top: 175px;
+        height: 50px;
+        background-color: aqua;
       }
     }
     &__right{
