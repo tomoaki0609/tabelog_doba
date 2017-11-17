@@ -76,3 +76,5 @@ gem 'devise'
 gem 'paperclip'
 
 gem 'erb2haml'
+
+gem 'mechanize'
