@@ -31,10 +31,11 @@
 ## reviews table
 |Column|Type|Options|
 |------|----|-------|
+|nickname|string|
 |rate|integer||
 |comment|text||
-|user_id|references|foreign_key: true|
-|product_id|references|foreign_key: true|
+<!-- |user_id|references|foreign_key: true| -->
+|product_id|integer|foreign_key: true|
 
 - belongs_to :user
 - belongs_to :product
