@@ -1,14 +1,14 @@
-.shop-detail__frame__left__review
-  .shop-detail__frame__left__review__name
-    %p.first 口コミ
-    %image
-      = image_tag "/images/gorilla.jpg", size: "35x35"
-    %a.first ごりらりごりらりごりらりごりら
-  .shop-detail__frame__left__review__detail
-    .shop-detail__frame__left__review__detail__text
-      %p「さくらまつり」 桜色に染まっていく麺が、白キクラゲが、イカが美しい「イエ
-      %p ２０１７年・桜まつり、残すも、あと２つ！勝手に桜まつりと称して、桜のオヤツやら、、、
-      %a 続きを読む
+-@product.reviews.each do |review|
+  .shop-detail__frame__left__review
+    .shop-detail__frame__left__review__name
       %image
-        = image_tag "/images/だんご.jpeg", size: "55x55"
-.shop-detail__frame__left__blank
+        = image_tag "/images/gorilla.jpg", size: "35x35"
+      %a.first{href: "/users/#{review.user.id}"} #{review.user.nickname}
+    .shop-detail__frame__left__review__detail
+      .shop-detail__frame__left__review__detail__text
+        %span "#{review.title}"
+        %p.second #{review.comment}
+        %a 続きを読む
+        %image
+          = image_tag "/images/きりん.jpeg", size: "55x55"
+  .shop-detail__frame__left__blank

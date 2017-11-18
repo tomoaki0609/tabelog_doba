@@ -42,32 +42,29 @@
         .shop-detail__frame__left__images
           .shop-detail__frame__left__images__first
             %image
-              = image_tag "/images/チャオタイ1.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ2.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ3.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ4.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ5.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
           .shop-detail__frame__left__images__second
             %image
-              = image_tag "/images/チャオタイ1.jpg", size: "125x125"
+              = image_tag "#{@product.image1}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ2.jpg", size: "125x125"
+              = image_tag "#{@product.image2}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ3.jpg", size: "125x125"
+              = image_tag "#{@product.image3}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ4.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "/images/チャオタイ5.jpg", size: "125x125"
+              = image_tag "#{@product.image_url}", size: "125x125"
         %a{href: '###'} もっと見る
         .shop-detail__frame__left__blank
-        = render "products/comment"
-        = render "products/comment"
-        = render "products/comment"
-        = render "products/comment"
+          = link_to '口コミを登録', "/products/#{@product.id}/reviews/new", method: :get, class: "comment-link"
         = render "products/comment"
 
       .shop-detail__frame__right

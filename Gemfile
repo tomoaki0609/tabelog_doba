@@ -78,3 +78,5 @@ gem 'paperclip'
 gem 'erb2haml'
 
 gem 'mechanize'
+
+gem 'mini_magick'

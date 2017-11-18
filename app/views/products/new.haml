@@ -6,9 +6,10 @@
   = f.text_field :address2, placeholder: '市町村'
   = f.text_field :address3, placeholder: '丁目・番地、建物名'
   = f.text_field :genre, placeholder: 'ジャンル'
+  = f.text_field :image_url, placeholder: 'メインの写真'
   = f.text_field :catchphrase, placeholder: 'キャッチコピー'
   = f.text_field :detail, placeholder: '詳細'
-  = f.text_field :image1, placeholder: '写真（メイン）'
-  = f.text_field :image2, placeholder: '写真（サブ１）'
-  = f.text_field :image3, placeholder: '写真（サブ２）'
+  = f.text_field :image1, placeholder: '写真１'
+  = f.text_field :image2, placeholder: '写真２'
+  = f.text_field :image3, placeholder: '写真３'
   = f.submit '店の登録', style: 'background-color:aqua;', method: :post

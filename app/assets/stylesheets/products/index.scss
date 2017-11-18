@@ -1,5 +1,6 @@
 //first-contents(serch-form)
-$text-color: whitesmoke;
+$text-color: mintcream;
+$bordary-color: lightgray;
 
 #fixedPagetop{
   height: 60px;
@@ -48,7 +49,7 @@ $text-color: whitesmoke;
 #scroll-button{
   height: 40px;
   width: 40px;
-  background-color: whitesmoke;
+  background-color: $text-color;
   position: absolute;
   left: 1300px;
   top: 700px;
@@ -114,7 +115,7 @@ $text-color: whitesmoke;
         }
       }
       li+ li {
-        border-left: 1px dotted lightgray;
+        border-left: 1px dotted $bordary-color;
       }
       a{
         color: white;
@@ -209,7 +210,7 @@ $text-color: whitesmoke;
 
 .second-contents{
   margin: 0 auto;
-  height: 2000px;
+  height: 7000px;
   .second-contents__frame{
     width: 1120px;
     position: absolute;
@@ -246,7 +247,7 @@ $text-color: whitesmoke;
       .border{
         width: 830px;
         height: 450px;
-        border: groove lightgray 1px;
+        border: groove $bordary-color 1px;
         margin-top: 25px;
         -webkit-border-radius: 5px;
         .frame{
@@ -295,7 +296,7 @@ $text-color: whitesmoke;
                 }
                 li+ li {
                   padding-left: 5px;
-                  border-left: 1px dotted lightgray;
+                  border-left: 1px dotted $bordary-color;
                 }
                 a{
                   line-height: 1rem;
@@ -323,7 +324,7 @@ $text-color: whitesmoke;
                 }
                 li+ li {
                   padding-left: 5px;
-                  border-left: 1px dotted lightgray;
+                  border-left: 1px dotted $bordary-color;
                 }
                 a{
                   line-height: 1rem;
@@ -352,7 +353,7 @@ $text-color: whitesmoke;
       .information-form{
         margin-top: 25px;
         height: 170px;
-        border-top: solid lightgray 5px;
+        border-top: solid $bordary-color 5px;
         .top{
           height: 120px;
           background-color: $text-color;
@@ -380,8 +381,8 @@ $text-color: whitesmoke;
               float: left;
               height: 50px;
               width: 200px;
-              border-top: 1px solid ghostwhite;
-              border-bottom: 1px solid ghostwhite;
+              border-top: 1px solid $bordary-color;
+              border-bottom: 1px solid $bordary-color;
               p{
                 text-align: center;
                 line-height: 50px;
@@ -391,31 +392,34 @@ $text-color: whitesmoke;
               }
             }
             .box+ .box{
-              border-left: 1px solid ghostwhite;
+              border-left: 1px solid $bordary-color;
             }
           }
         }
       }
+      .blank2{
+        clear: both;
+        p{
+          text-align: left;
+          height: 40px;
+          line-height: 40px;
+          font-size: 0.8rem;
+        }
+      }
       .detail{
         height: 440px;
-        .blank2{
-          clear: both;
-          border-bottom: solid ghostwhite 3px;
-          p{
-            text-align: left;
-            height: 40px;
-            line-height: 40px;
-            font-size: 0.8rem;
-          }
-        }
+        border-top: solid $bordary-color 3px;
         .detail__header{
           height: 50px;
           a{
+            font-size: 1.2rem;
             height: 50px;
             line-height: 50px;
-            padding-left: 30px;
+            padding-left: 10px;
+            margin-left: 10px;
             font-weight: bold;
             color: darkblue;
+            border-left: 3px solid $bordary-color;
           }
         }
         .detail__body{
@@ -441,9 +445,6 @@ $text-color: whitesmoke;
             height: 130px;
             width: 450px;
             p{
-              &.first{
-                font-size: 0.8rem;
-              }
               &.second{
                 font-size: 0.8rem;
               }
@@ -470,7 +471,7 @@ $text-color: whitesmoke;
             p{
               font-size: 0.7rem;
               border: 1px;
-              border-color: lightgray;
+              border-color: $bordary-color;
               border-style: solid;
               border-radius: 5px;
             }
@@ -566,7 +567,7 @@ $text-color: whitesmoke;
               height: 64px;
               padding: 4px;
               border: 1px;
-              border-color: lightgray;
+              border-color: $bordary-color;
               border-style: solid;
               border-radius: 5px;
             }
@@ -589,7 +590,7 @@ $text-color: whitesmoke;
             .mypage__menu{
               margin-top: 10px;
               font-size: 0.8rem;
-              color: lightgray;
+              color: $bordary-color;
               .contents{
                 float:left;
                 width: 90%;
@@ -600,7 +601,7 @@ $text-color: whitesmoke;
                 width: 10%;
               }
               ul li{
-                border-top: solid lightgray 1px;
+                border-top: solid $bordary-color 1px;
                 line-height: 2rem;
               }
             }
@@ -630,7 +631,7 @@ $text-color: whitesmoke;
       .blank1{
         height: 30px;
         background-color: white;
-        border-bottom: groove whitesmoke 1px;
+        border-bottom: groove $bordary-color 1px;
       }
       .blank2{
         height: 30px;
@@ -644,14 +645,14 @@ $text-color: whitesmoke;
             float: left;
             height: 30px;
             width: 85%;
-            color: lightgray;
+            color: $bordary-color;
           }
           .button-form{
             float: left;
             width: 13%;
             height: 34px;
             line-height: 34px;
-            background-color: lightgray;
+            background-color: $bordary-color;
             text-align: center;
           }
         }
@@ -665,7 +666,7 @@ $text-color: whitesmoke;
       }
       .facebook{
         padding-top: 15px;
-        background-color: lightgray;
+        background-color: $bordary-color;
         height: 40px;
         .fa {
           color: perple;
@@ -689,7 +690,7 @@ $text-color: whitesmoke;
       }
       .blank4{
         height: 5px;
-        border-bottom: thin groove whitesmoke;
+        border-bottom: thin groove $bordary-color;
       }
       .blank5{
         height: 5px;
@@ -713,7 +714,7 @@ $text-color: whitesmoke;
 }
 .footer-before{
   height: 800px;
-  background-color: lightgray;
+  background-color: mintcream;
 }
 footer{
   height: 700px;

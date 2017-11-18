@@ -1,5 +1,5 @@
+$text-color: mintcream;
 $bordary-color: lightgray;
-$text-color: whitesmoke;
 
 .top{
   position: relative;
@@ -74,7 +74,7 @@ $text-color: whitesmoke;
     }
     .top__menu{
       height: 50px;
-      background-color: ghostwhite;
+      background-color: $text-color;
       &__boxes{
         &__box{
           float: left;
@@ -103,10 +103,11 @@ $text-color: whitesmoke;
 }
 .shop-detail{
   position: relative;
-  margin-top: 282px;
-  height: 284px;
+  margin-top: 292px;
+  height: 1000px;
   width: 100%;
-  border-top: solid 2px $bordary-color;
+  border-top: groove 2px $bordary-color;
+  background-color: $text-color;
   &__frame{
     padding-top: 20px;
     width: 1000px;
@@ -118,7 +119,6 @@ $text-color: whitesmoke;
       float: left;
       width: 680px;
       p{
-        font-weight: bold;
         &.first{
 
         }
@@ -156,6 +156,7 @@ $text-color: whitesmoke;
           -webkit-border-radius: 5px;
           height: 145px;
           width: 550px;
+          background-color: linen;
           &:before{
               content: "";
               position: absolute;
@@ -164,7 +165,7 @@ $text-color: whitesmoke;
               width: 13px;
               height: 12px;
               bottom: 0;
-              background: $text-color;
+              background: linen;
               border-radius: 50%;
           }
 
@@ -176,14 +177,20 @@ $text-color: whitesmoke;
               width: 20px;
               height: 18px;
               bottom: 3px;
-              background: $text-color;
+              background: linen;
               border-radius: 50%;
           }
           &__text{
             padding-top: 10px;
             padding-left: 10px;
+            span{
+              font-weight: bold;
+              font-size: 1rem;
+            }
             p{
-              font-size: 0.8rem;
+              &.second{
+                font-size: 0.8rem;
+              }
             }
           }
         }
@@ -191,6 +198,11 @@ $text-color: whitesmoke;
       &__blank{
         margin-top: 175px;
         height: 50px;
+        .comment-link{
+          font-size: 1.2rem;
+          font-weight: bold;
+          text-decoration: none;
+        }
       }
     }
     &__right{
