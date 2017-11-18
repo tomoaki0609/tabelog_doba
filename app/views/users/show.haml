@@ -7,13 +7,13 @@
       .link
       .back-image
         .bottom
-          %p #{current_user.nickname}のレストランガイド
+          %p #{@user.nickname}のレストランガイド
           %input.button-form{type:"button", href: 'http://google.co.jp', value: "レュビアーページ設定"}
       .back-avatar
-        = image_tag current_user.avatar, size: "120x120", class: "avatar"
+        = image_tag @user.avatar, size: "120x120", class: "avatar"
       .profile
         .profile-left
-          %p #{current_user.nickname}
+          %p #{@user.nickname}
           %a{href: '###'} プロフィール詳細へ
         .profile-right
           .slide
@@ -36,8 +36,8 @@
       %hr
       .log
         .box
-          %p.count 0
-          %p.item ログ
+          %p.count #{@products.count}
+          %p.item 登録したお店
         .box
           %p.count 0
           %p.item 行ったお店
@@ -45,8 +45,8 @@
           %p.count 0
           %p.item 行きたいお店
         .box
-          %p.count 0
-          %p.item まとめ
+          %p.count #{@reviews.count}
+          %p.item コメントしたお店
         .box
           %p.count 0
           %p.item フォロー中

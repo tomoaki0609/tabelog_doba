@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   before_action :authenticate_user!, except: :index
 
   def index
+    @products = Product.order('id DESC').limit(7)
   end
 
   def new
@@ -44,7 +45,7 @@ class ProductsController < ApplicationController
 
   private
   def product_params
-    params.require(:product).permit(:shop_name, :ruby, :phone_number, :address1, :address2, :address3, :genre, :image_url, :detail, :catchphrase).merge(user_id: current_user.id)
+    params.require(:product).permit(:shop_name, :ruby, :phone_number, :address1, :address2, :address3, :image_url, :genre, :image_url, :detail, :catchphrase, :image1, :image2, :image3).merge(user_id: current_user.id)
   end
 
   def move_to_index
