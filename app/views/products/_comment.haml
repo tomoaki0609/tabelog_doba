@@ -1,4 +1,4 @@
--@product.reviews.each do |review|
+-@product.reviews.includes(:user).each do |review|
   .shop-detail__frame__left__review
     .shop-detail__frame__left__review__name
       %image

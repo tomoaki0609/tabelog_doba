@@ -7,6 +7,7 @@ $(function() {
         }
     });
 });
+
 $(function() {
   $("#color-change").hover(
     function(){
