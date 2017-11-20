@@ -2,7 +2,7 @@
   .detail
     .detail__header
       .shop-name
-        %a #{product.shop_name}
+        = link_to product.shop_name, "/products/#{product.id}"
     .detail__body
       .body__images
         .image
