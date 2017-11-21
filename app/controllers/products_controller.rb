@@ -35,7 +35,7 @@ class ProductsController < ApplicationController
   def update
     product = Product.find(params[:id])
     if product.update(product_params)
-      redirect_to user_path, notice: "店舗情報を編集しました"
+      redirect_to action: :index, notice: "店舗情報を編集しました"
     end
   end
 

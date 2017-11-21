@@ -11,8 +11,8 @@
           = image_tag "#{product.image1}", size: "28x28"
           = image_tag "#{product.image2}", size: "28x28"
           = image_tag "#{product.image3}", size: "28x28"
-          = image_tag "#{product.image3}", size: "28x28"
-          = image_tag "#{product.image3}", size: "28x28"
+          = image_tag "", size: "28x28"
+          = image_tag "", size: "28x28"
       .body__data
         %p.second ★星
         %p.third 昼 〜￥999
@@ -23,10 +23,13 @@
       .body__box
         %p ネット予約で貯まる・使える
       .body__catchphrase
-        %p.first #{product.catchphrase}
-        %span #{product.detail}
+        %span #{product.catchphrase}
+        %p #{product.detail}
       .body__review
-        %p コメント！！
+        -if product.reviews.present?
+          %p #{product.reviews.last.comment.truncate(30)}
+        -else
+          %p
     .detail__information
       %p.first サービス
       %p.second お得コース？！

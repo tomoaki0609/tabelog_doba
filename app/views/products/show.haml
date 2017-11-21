@@ -44,13 +44,13 @@
             %image
               = image_tag "#{@product.image_url}", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
           .shop-detail__frame__left__images__second
             %image
               = image_tag "#{@product.image1}", size: "125x125"
@@ -59,9 +59,9 @@
             %image
               = image_tag "#{@product.image3}", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
             %image
-              = image_tag "#{@product.image_url}", size: "125x125"
+              = image_tag "", size: "125x125"
         %a{href: '###'} もっと見る
         .shop-detail__frame__left__blank
           = link_to '口コミを登録', "/products/#{@product.id}/reviews/new", method: :get, class: "comment-link"

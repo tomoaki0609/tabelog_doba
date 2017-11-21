@@ -482,9 +482,11 @@ $bordary-color: lightgray;
             width: 640px;
             background-color: $text-color;
             span{
-              font-size: 0.8rem;
-              font-weight: bold;
               border-bottom: dotted 1px black;
+              font-weight: bold;
+            }
+            p{
+              font-size: 0.8rem;
             }
           }
           .body__review{

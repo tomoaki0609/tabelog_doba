@@ -19,7 +19,7 @@
           %li
             %a{href: 'https://tabelog.com/rvwr/007631807/rvwlst/0/0/?smp=0&review_content_exist=0'} 行った・行きたい
           %li
-            = link_to 'マイページ', '/users/current_user.id', method: :get
+            = link_to 'マイページ', '/users/#{current_user.id}', method: :get
           %li
             %form.select
               %select
