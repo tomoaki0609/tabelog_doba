@@ -14,9 +14,9 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to root_path, notice: "グループを作成しました"
+      render :index, notice: "店情報を登録しました"
     else
-      flash.now[:alert] = "グループ名を入力してください"
+      flash.now[:alert] = "店情報を登録してください"
       render :new
     end
   end
