@@ -279,19 +279,19 @@
               .mypage__menu
                 .contents
                   %ul
-                    %li ログ
+                    %li.first 登録したお店
                     %li 行ったお店
                     %li 行きたいお店
-                    %li フォロー中
+                    %li.first コメントしたお店
                     %li フォロワー
                     %li 下書き一覧
                     %li 公開中口コミ一覧
                 .count
                   %ul
+                    %li.first #{current_user.products.count}
                     %li 0
                     %li 0
-                    %li 0
-                    %li 0
+                    %li.first #{current_user.reviews.count}
                     %li 0
                     %li 0
                     %li 0

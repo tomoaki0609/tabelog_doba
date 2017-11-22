@@ -5,7 +5,7 @@
         -if @product.present?
           %p #{@product.shop_name} - #{@product.address2} #{@product.genre}
         -else
-          %p #{current_user.nickname}さんのトップページ『#{current_user.nickname}のレストランガイド』
+          %p #{@user.nickname}さんのトップページ『#{@user.nickname}のレストランガイド』
       .user-menu
         %ul
           %li
@@ -19,7 +19,7 @@
           %li
             %a{href: 'https://tabelog.com/rvwr/007631807/rvwlst/0/0/?smp=0&review_content_exist=0'} 行った・行きたい
           %li
-            = link_to 'マイページ', '/users/#{current_user.id}', method: :get
+            %a{href: "/users/#{current_user.id}"} マイページ
           %li
             %form.select
               %select

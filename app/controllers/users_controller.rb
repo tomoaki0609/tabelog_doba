@@ -4,4 +4,8 @@ class UsersController < ApplicationController
     @products = @user.products
     @reviews = @user.reviews
   end
+
+  def edit
+    @user = User.find(params[:id])
+  end
 end
