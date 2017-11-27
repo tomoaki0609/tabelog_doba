@@ -605,6 +605,10 @@ $bordary-color: lightgray;
               ul li{
                 border-top: solid $bordary-color 1px;
                 line-height: 2rem;
+                &.first{
+                  font-weight: bold;
+                  color: black;
+                }
               }
             }
             .creditcard-service{
